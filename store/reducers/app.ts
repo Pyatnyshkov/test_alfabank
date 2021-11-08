@@ -5,11 +5,13 @@ interface AppState {
   merchants: Merchant[];
   merchant: string;
   tab: string;
+  subTab: string;
 }
 const initialState: AppState = {
   merchants: [],
   merchant: "",
-  tab: "Information"
+  tab: "Merchant",
+  subTab: "Settings"
 };
 
 const appSlice = createSlice({
@@ -24,9 +26,12 @@ const appSlice = createSlice({
     },
     selectTab(state, action: PayloadAction<string>) {
       state.tab = action.payload;
+    },
+    selectSubTub(state, action: PayloadAction<string>) {
+      state.subTab = action.payload;
     }
   }
 });
 
-export const { setMerchants, setMerchant, selectTab } = appSlice.actions;
+export const { setMerchants, setMerchant, selectTab, selectSubTub } = appSlice.actions;
 export default appSlice.reducer;
