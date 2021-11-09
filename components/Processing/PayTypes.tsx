@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React from "react";
 
-const PayTypes: FC = () => {
-    return <div className="menu">Способы оплаты</div>;
+const PayTypes = () => {
+    return <div className="subTab_content">PayTypes</div>;
 };
 
 export default PayTypes;

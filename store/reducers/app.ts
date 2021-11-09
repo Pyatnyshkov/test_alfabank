@@ -3,15 +3,23 @@ import { Merchant } from "../../models/merchant";
 
 interface AppState {
   merchants: Merchant[];
-  merchant: string;
-  tab: string;
+  merchant: Merchant;
+  mainTab: string;
   subTab: string;
 }
 const initialState: AppState = {
   merchants: [],
-  merchant: "",
-  tab: "Merchant",
-  subTab: "Settings"
+  merchant: {
+    template_merchant_login: "",
+    merchant_login: "",
+    merchant_full_name: "",
+    processing_id: "",
+    terminal_id: "",
+    merchant_emails: "",
+    users: [{ username: "", password: "" }]
+  },
+  mainTab: "",
+  subTab: ""
 };
 
 const appSlice = createSlice({
@@ -21,17 +29,22 @@ const appSlice = createSlice({
     setMerchants(state, action: PayloadAction<Merchant[]>) {
       state.merchants = action.payload;
     },
-    setMerchant(state, action: PayloadAction<string>) {
+    setMerchant(state, action: PayloadAction<Merchant>) {
       state.merchant = action.payload;
     },
     selectTab(state, action: PayloadAction<string>) {
-      state.tab = action.payload;
+      state.mainTab = action.payload;
     },
-    selectSubTub(state, action: PayloadAction<string>) {
+    selectSubTab(state, action: PayloadAction<string>) {
       state.subTab = action.payload;
     }
   }
 });
 
-export const { setMerchants, setMerchant, selectTab, selectSubTub } = appSlice.actions;
+export const {
+  setMerchants,
+  setMerchant,
+  selectTab,
+  selectSubTab
+} = appSlice.actions;
 export default appSlice.reducer;

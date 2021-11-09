@@ -3,7 +3,7 @@ export interface IObjectKeys {
 }
 
 export interface Merchant extends IObjectKeys {
-    "creation_time": number,
+    "creation_time"?: number,
     "template_merchant_login": string,
     "merchant_login": string,
     "merchant_full_name": string,

@@ -6,11 +6,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -36,6 +31,30 @@ a {
   top: 0;
 }
 
+.header_logo {
+  background: url('./img/alfa_logo.png') no-repeat 50%;
+  background-size: contain;
+  width: 135px;
+  height: 30px;
+}
+
+.header_filter {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgba(11,31,53,.4);
+  border-radius: 4px;
+  padding: 7px 13px;
+  cursor: pointer;
+}
+
+.header_filter-logo {
+  background-image: url("./img/filter.svg");
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
 .merchants_list {
   width: 300px;
   min-height: 100%;
@@ -58,4 +77,111 @@ a {
   padding: 10px;
   font-size: 13px;
   cursor: pointer;
+}
+
+.merchant_list-elem:last-child {
+  margin-bottom: 90px;
+}
+
+.merchant_list-elem-selected {
+  border-color: #484747;
+  box-shadow: 0 0 1px 1px #484747;
+  background: #cbcaca;
+}
+
+.merchant_list-name {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.merchant_list-contacts-elem {
+  margin-bottom: 5px;
+}
+
+.merchant_card-title {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.merchant_card-name {
+  margin-right: 10px;
+}
+
+.merchant_card-active {
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.merchant_card-active-enabled {
+  background-color: #7ceb9d;
+}
+
+.merchant_card-active-disabled {
+  background-color: #eb7e63;
+}
+
+.tab_radio {
+  display: none;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+}
+
+.tabs:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(11,31,53,.3);
+}
+
+.tabs-label {
+  position: relative;
+  z-index: 10;
+  display: flex;
+}
+
+.tabs-label:not(:last-child) {
+  margin-right: 28px;
+}
+
+.tabs-elem {
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgba(11,31,53,.6);
+  text-align: center;
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+}
+
+.tabs-elem:hover {
+  color: rgba(11,31,53,.95);
+}
+
+.tab_radio:checked ~ .tabs-elem {
+  border-bottom: 3px solid #f03226;
+  color: rgba(11,31,53,.95);
+  cursor: default;
+}
+
+.tabContent {
+  margin-top: 10px;
+}
+
+.subTab .tabs-elem {
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.subTab_content {
+  margin-top: 15px;
 }

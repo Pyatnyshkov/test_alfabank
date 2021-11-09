@@ -1,0 +1,360 @@
+[
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "mgremgkmergmkreerqqqwwww",
+    "merchant_full_name": "mgremgkmergmkreerqqqwwww",
+    "password": "mgremgkmergmkreerqqqwwww*?1",
+    "must_change_pwd": false,
+    "processing_id": "12345667654",
+    "terminal_id": "123456",
+    "visa_3ds_id": "12345667654",
+    "master_card_3ds_id": "12345667654",
+    "mir_3ds_id": "12345667654",
+    "merchant_url": "https://mgremgkmergmkreerqqqwwww.com",
+    "merchant_emails": "ITrapeznikov@alfabank.ru",
+    "payment_page_login": "typical",
+    "options": [
+      "SEND_ORDER_NUMBER_TO_SV",
+      "SECURECODE_ALLOWED",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "REFUNDS_ALLOWED",
+      "REGISTER_BY_CLIENT",
+      "MIR_ACCEPT_ALLOWED",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "SEND_ORDER_DESC_TO_SV",
+      "SEND_PAYMENT_FORM",
+      "CUSTOM_PAYMENT_PAGE"
+    ],
+    "currencies": ["810", "810"],
+    "default_currency": "810",
+    "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "rules_page_merchant_name": "testOrderIPSwithoutSBP",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "mgremgkmergmkreerqqqwwww-api",
+        "password": "D2FxJRO79qJdwpouXp87iYiku6k="
+      },
+      {
+        "username": "mgremgkmergmkreerqqqwwww-operator",
+        "password": "D2FxJRO79qJdwpouXp87iYiku6k="
+      }
+    ],
+    "creation_time": 1635420781.1413949
+  },
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "mgremgkmergmkreerqqy",
+    "merchant_full_name": "mgremgkmergmkreerqqy",
+    "password": "mgremgkmergmkreerqqy*?1",
+    "must_change_pwd": false,
+    "processing_id": "12345667654",
+    "terminal_id": "123456",
+    "visa_3ds_id": "12345667654",
+    "master_card_3ds_id": "12345667654",
+    "mir_3ds_id": "12345667654",
+    "merchant_url": "https://mgremgkmergmkreerqqй.com",
+    "merchant_emails": "techemail@alfabank.ru",
+    "payment_page_login": "typical",
+    "options": [
+      "SECURECODE_ALLOWED",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "CUSTOM_PAYMENT_PAGE",
+      "MIR_ACCEPT_ALLOWED",
+      "SEND_ORDER_DESC_TO_SV",
+      "SEND_PAYMENT_FORM",
+      "REFUNDS_ALLOWED",
+      "SEND_ORDER_NUMBER_TO_SV",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "REGISTER_BY_CLIENT"
+    ],
+    "currencies": ["810", "810"],
+    "default_currency": "810",
+    "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "rules_page_merchant_name": "ООО Бывает",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "mgremgkmergmkreerqqy-api",
+        "password": "OdQeqK7taBf3eSZbXbJOnCOTTnE="
+      },
+      {
+        "username": "mgremgkmergmkreerqqy-operator",
+        "password": "OdQeqK7taBf3eSZbXbJOnCOTTnE="
+      }
+    ],
+    "creation_time": 1635340723.8738787
+  },
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "gwegkemwgmkewmkgewqqqqw",
+    "merchant_full_name": "gwegkemwgmkewmkgewqqqqw",
+    "password": "gwegkemwgmkewmkgewqqqqw*?1",
+    "must_change_pwd": false,
+    "processing_id": "12345667654",
+    "terminal_id": "123456",
+    "visa_3ds_id": "12345667654",
+    "master_card_3ds_id": "12345667654",
+    "mir_3ds_id": "12345667654",
+    "merchant_url": "https://gwegkemwgmkewmkgewqqqqw.com",
+    "merchant_emails": "techemail@alfabank.ru",
+    "payment_page_login": "typical",
+    "options": [
+      "REFUNDS_ALLOWED",
+      "MIR_ACCEPT_ALLOWED",
+      "REGISTER_BY_CLIENT",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "SECURECODE_ALLOWED",
+      "SEND_ORDER_NUMBER_TO_SV",
+      "SEND_PAYMENT_FORM",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "SEND_ORDER_DESC_TO_SV",
+      "CUSTOM_PAYMENT_PAGE"
+    ],
+    "currencies": ["810", "810"],
+    "default_currency": "810",
+    "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "rules_page_merchant_name": "ООО Бывает",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "gwegkemwgmkewmkgewqqqqw-api",
+        "password": "/ovcBp0WawHzqYmnD+Aw+UdMK+4="
+      },
+      {
+        "username": "gwegkemwgmkewmkgewqqqqw-operator",
+        "password": "/ovcBp0WawHzqYmnD+Aw+UdMK+4="
+      }
+    ],
+    "creation_time": 1632401673.296425
+  },
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "gwegkemwgmkewmkgewqq",
+    "merchant_full_name": "gwegkemwgmkewmkgewqq",
+    "password": "gwegkemwgmkewmkgewqq*?1",
+    "must_change_pwd": false,
+    "processing_id": "12345667654",
+    "terminal_id": "123456",
+    "visa_3ds_id": "12345667654",
+    "master_card_3ds_id": "12345667654",
+    "mir_3ds_id": "12345667654",
+    "merchant_url": "https://gwegkemwgmkewmkgewqq.com",
+    "merchant_emails": "techemail@alfabank.ru",
+    "payment_page_login": "typical",
+    "options": [
+      "REGISTER_BY_CLIENT",
+      "REFUNDS_ALLOWED",
+      "SEND_PAYMENT_FORM",
+      "SECURECODE_ALLOWED",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "SEND_ORDER_DESC_TO_SV",
+      "CUSTOM_PAYMENT_PAGE",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "SEND_ORDER_NUMBER_TO_SV",
+      "MIR_ACCEPT_ALLOWED"
+    ],
+    "currencies": ["810", "810"],
+    "default_currency": "810",
+    "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "rules_page_merchant_name": "ООО Бывает",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "gwegkemwgmkewmkgewqq-api",
+        "password": "uEqc4yUv9drRZ8EHzNuUUSPtWgk="
+      },
+      {
+        "username": "gwegkemwgmkewmkgewqq-operator",
+        "password": "uEqc4yUv9drRZ8EHzNuUUSPtWgk="
+      }
+    ],
+    "creation_time": 1632393063.6082268
+  },
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "mmfnmhgkmnghkmhg",
+    "merchant_full_name": "ghjlftvgjregftv",
+    "password": "Password*1",
+    "must_change_pwd": true,
+    "processing_id": "1205024",
+    "terminal_id": "1205025",
+    "visa_3ds_id": "1205023",
+    "master_card_3ds_id": "123321",
+    "mir_3ds_id": "1205023",
+    "merchant_url": "http://mmfnmhgkmnghkmhg.com",
+    "external_fraud_control_enabled": true,
+    "overrided_fraud_control_login": "ta_avia",
+    "mcc": "4511",
+    "merchant_emails": "ITrapeznikov@alfabank.ru",
+    "payment_page_login": "alfapage",
+    "options": [
+      "REFUNDS_ALLOWED",
+      "MIR_ACCEPT_ALLOWED",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "SBP_C2B_PAYMENT_BY_DYNAMIC_QR_CODE_ALLOWED",
+      "CUSTOM_PAYMENT_PAGE",
+      "REGISTER_BY_CLIENT",
+      "SEND_ORDER_NUMBER_TO_SV",
+      "SECURECODE_ALLOWED",
+      "SEND_ORDER_DESC_TO_SV",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "SEND_PAYMENT_FORM",
+      "SBP_C2B_API_ALLOWED"
+    ],
+    "currencies": ["810", "643"],
+    "default_currency": "810",
+    "overrided_fraud_control_login_enabled": true,
+    "back_url": "https://pay.alfabank.ru/payment/merchants/alfapay/finish_lt.html",
+    "fail_url": "https://pay.alfabank.ru/payment/merchants/alfapay/finish_lt.html",
+    "rules_page_merchant_name": "newtestOrderIPSwithSBP",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "mmfnmhgkmnghkmhg-api",
+        "password": "sGXZKqsGcU9zZ+a4mZ+H1x6R52k="
+      },
+      {
+        "username": "mmfnmhgkmnghkmhg-operator",
+        "password": "sGXZKqsGcU9zZ+a4mZ+H1x6R52k="
+      }
+    ],
+    "creation_time": 1635932863.505815
+  },
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "gwegkemwgmkewmkgew",
+    "merchant_full_name": "gwegkemwgmkewmkgew",
+    "password": "gwegkemwgmkewmkgew*?1",
+    "must_change_pwd": false,
+    "processing_id": "12345667654",
+    "terminal_id": "123456",
+    "visa_3ds_id": "12345667654",
+    "master_card_3ds_id": "12345667654",
+    "mir_3ds_id": "12345667654",
+    "merchant_url": "https://gwegkemwgmkewmkgew.com",
+    "merchant_emails": "techemail@alfabank.ru",
+    "payment_page_login": "typical",
+    "options": [
+      "REFUNDS_ALLOWED",
+      "MIR_ACCEPT_ALLOWED",
+      "REGISTER_BY_CLIENT",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "SECURECODE_ALLOWED",
+      "SBP_C2B_API_ALLOWED",
+      "SEND_ORDER_NUMBER_TO_SV",
+      "SEND_PAYMENT_FORM",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "SEND_ORDER_DESC_TO_SV",
+      "SBP_C2B_PAYMENT_BY_DYNAMIC_QR_CODE_ALLOWED",
+      "CUSTOM_PAYMENT_PAGE"
+    ],
+    "currencies": ["810", "810"],
+    "default_currency": "810",
+    "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "rules_page_merchant_name": "ООО Бывает",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "gwegkemwgmkewmkgew-api",
+        "password": "ADuiZ3ai+aGCUNwB/69mvQ8GKC0="
+      },
+      {
+        "username": "gwegkemwgmkewmkgew-operator",
+        "password": "ADuiZ3ai+aGCUNwB/69mvQ8GKC0="
+      }
+    ],
+    "creation_time": 1632401886.7973444
+  },
+  {
+    "template_merchant_login": "template_ecom",
+    "merchant_login": "gwegkemwgmkewmkgewqqqq",
+    "merchant_full_name": "gwegkemwgmkewmkgewqqqq",
+    "password": "gwegkemwgmkewmkgewqqqq*?1",
+    "must_change_pwd": false,
+    "processing_id": "12345667654",
+    "terminal_id": "123456",
+    "visa_3ds_id": "12345667654",
+    "master_card_3ds_id": "12345667654",
+    "mir_3ds_id": "12345667654",
+    "merchant_url": "https://gwegkemwgmkewmkgewqqqq.com",
+    "merchant_emails": "techemail@alfabank.ru",
+    "payment_page_login": "typical",
+    "options": [
+      "REFUNDS_ALLOWED",
+      "MIR_ACCEPT_ALLOWED",
+      "REGISTER_BY_CLIENT",
+      "VERIFIED_BY_VISA_ALLOWED",
+      "SECURECODE_ALLOWED",
+      "SEND_ORDER_NUMBER_TO_SV",
+      "SEND_PAYMENT_FORM",
+      "TRY_SSL_IF_U_IN_VERES_VISA",
+      "SEND_ORDER_DESC_TO_SV",
+      "CUSTOM_PAYMENT_PAGE"
+    ],
+    "currencies": ["810", "810"],
+    "default_currency": "810",
+    "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "rules_page_merchant_name": "ООО Бывает",
+    "merchant_inn": "9999876543",
+    "merchant_kpp": "99990001",
+    "merchant_ogrn": "9999999999999",
+    "merchant_actual_address": "123456 г.Тестовый, ул.Тестовая 1",
+    "merchant_phone": "+79876543210",
+    "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
+    "rules_page_login": "full",
+    "users": [
+      {
+        "username": "gwegkemwgmkewmkgewqqqq-api",
+        "password": "lFlnDQD8v3YlHBRx48cL6cF/Zrw="
+      },
+      {
+        "username": "gwegkemwgmkewmkgewqqqq-operator",
+        "password": "lFlnDQD8v3YlHBRx48cL6cF/Zrw="
+      }
+    ],
+    "creation_time": 1632401887.1000924
+  }
+]
