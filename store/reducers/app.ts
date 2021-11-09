@@ -4,8 +4,6 @@ import { Merchant } from "../../models/merchant";
 interface AppState {
   merchants: Merchant[];
   merchant: Merchant;
-  mainTab: string;
-  subTab: string;
 }
 const initialState: AppState = {
   merchants: [],
@@ -17,9 +15,7 @@ const initialState: AppState = {
     terminal_id: "",
     merchant_emails: "",
     users: [{ username: "", password: "" }]
-  },
-  mainTab: "",
-  subTab: ""
+  }
 };
 
 const appSlice = createSlice({
@@ -31,20 +27,9 @@ const appSlice = createSlice({
     },
     setMerchant(state, action: PayloadAction<Merchant>) {
       state.merchant = action.payload;
-    },
-    selectTab(state, action: PayloadAction<string>) {
-      state.mainTab = action.payload;
-    },
-    selectSubTab(state, action: PayloadAction<string>) {
-      state.subTab = action.payload;
     }
   }
 });
 
-export const {
-  setMerchants,
-  setMerchant,
-  selectTab,
-  selectSubTab
-} = appSlice.actions;
+export const { setMerchants, setMerchant } = appSlice.actions;
 export default appSlice.reducer;

@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../helpers/redux-hooks";
-import { selectSubTab } from "../../store/reducers/app";
+import React, { useState } from "react";
 
 import CustomTabs from "../UI/CustomTabs";
 import Settings from './Settings';
@@ -10,11 +8,7 @@ import PayTypes from './PayTypes';
 import SendSettings from './SendSettings';
 
 const Processing = () => {
-  const dispatch = useAppDispatch();
-  useEffect(() => {
-    dispatch(selectSubTab(tabs[0].value));
-  }, []);
-  const { subTab } = useAppSelector(state => state.app);
+  const [tab, setTab] = useState("Settings");
   const tabs = [
     {
       name: "Настройки",
@@ -37,11 +31,8 @@ const Processing = () => {
       value: "SendSettings"
     }
   ];
-  const handleTab = (value: string) => {
-    dispatch(selectSubTab(value));
-  };
   const getContent = () => {
-    switch (subTab) {
+    switch (tab) {
       case 'Settings':
         return <Settings />;
       case 'PaySystems':
@@ -57,10 +48,10 @@ const Processing = () => {
   return (
     <div className="tabContent">
       <CustomTabs
-        selected={subTab}
+        selected={tab}
         tabs={tabs}
         name="subTub"
-        handleTab={handleTab}
+        handleTab={(value) => setTab(value)}
         className="subTab"
       />
       {getContent()}
