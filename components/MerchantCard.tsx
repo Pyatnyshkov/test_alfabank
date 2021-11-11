@@ -43,27 +43,30 @@ const MerchantCard: FC = () => {
     }
   };
   return (
-    <div className="merchant_card">
-      <div className="merchant_card-title">
-        <div className="merchant_card-name">{merchant.merchant_full_name}</div>
-        <div
-          className={`merchant_card-active ${
+    <article className="merchant-card">
+      <h2 className="visually-hidden">{merchant.merchant_full_name}</h2>
+      <header className="merchant-card-header">
+        <h3 className="merchant-card__title">{merchant.merchant_full_name}</h3>
+        <span
+          className={`merchant-card__active ${
             merchant.enabled
-              ? "merchant_card-active-enabled"
-              : "merchant_card-active-disabled"
+              ? "merchant-card__active-enabled"
+              : "merchant-card__active-disabled"
           }`}
         >
           {merchant.enabled ? "Активен" : "Неактивен"}
-        </div>
-      </div>
-      <CustomTabs
-          handleTab={(value) => setTab(value)}
-          selected={tab}
-          tabs={tabs}
-          name="mainTab"
-      />
-      {getContent()}
-    </div>
+        </span>
+      </header>
+      <main className="merchant-card-main">
+        <CustomTabs
+            handleTab={(value) => setTab(value)}
+            selected={tab}
+            tabs={tabs}
+            name="mainTab"
+        />
+        {getContent()}
+      </main>
+    </article>
   );
 };
 

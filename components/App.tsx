@@ -24,9 +24,9 @@ const App: FC<AppProps> = ({ items }) => {
     <div className="page">
       <Header />
       <List />
-      <div className="main_page">
+      <main className="main__page">
           {merchant.merchant_full_name ? <MerchantCard /> : <Analytics />}
-      </div>
+      </main>
     </div>
   );
 };

@@ -25,19 +25,23 @@ const CustomTabs: FC<TabsProps> = ({
   };
   const getTabs = () =>
     tabs.map((tab, index) => (
-      <label className="tabs-label" key={index}>
-        <input
-          type="radio"
-          name={name}
-          value={tab.value}
-          checked={selected === tab.value}
-          className="tab_radio"
-          onChange={handleClick}
-        />
-        <span className="tabs-elem">{tab.name}</span>
-      </label>
+      <li className="tab__item">
+        <label className="tabs-label" key={index}>
+          <input
+            type="radio"
+            name={name}
+            value={tab.value}
+            checked={selected === tab.value}
+            className="tab__radio"
+            onChange={handleClick}
+          />
+          <span className="tabs__name">{tab.name}</span>
+        </label>
+      </li>
     ));
-  return <div className={`tabs ${className ? className : ''}`}>{getTabs()}</div>;
+  return <nav className="merchant-card-nav">
+          <ul className={`merchant-card-list tabs ${className ? className : ''}`}>{getTabs()}</ul>
+        </nav>;
 };
 
 export default CustomTabs;

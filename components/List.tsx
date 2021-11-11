@@ -15,37 +15,44 @@ const List: FC = () => {
     }
   };
   return (
-    <div className="merchants_list">
-      {merchants.map((merchant: Merchant, index: number) => (
-        <div
-          className={`merchant_list-elem ${merchant.merchant_full_name ===
-            selected.merchant_full_name && "merchant_list-elem-selected"}`}
-          key={index}
-          onClick={() => selectMerchant(merchant)}
-        >
-          <div className="merchant_list-name">
-            {merchant.merchant_full_name}
-          </div>
-          <div className="merchant_list-contacts">
-            <div className="merchant_list-contacts-elem">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={merchant.merchant_url}
-              >
-                {merchant.merchant_url}
-              </a>
-            </div>
-            <div className="merchant_list-contacts-elem">
-              {merchant.merchant_phone}
-            </div>
-            <div className="merchant_list-contacts-elem">
-              {merchant.merchant_emails}
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
+    <nav className="aside">
+      <ul className="merchants-list">
+        {merchants.map((merchant: Merchant, index: number) => (
+          <li
+            className={`merchant__elem ${merchant.merchant_full_name ===
+              selected.merchant_full_name && "merchant__elem__selected"}`}
+            key={index}
+            onClick={() => selectMerchant(merchant)}
+          >
+            <h2 className="merchant__name">
+              {merchant.merchant_full_name}
+            </h2>
+            <ul className="merchant-contacts-list">
+              <li className="merchant__contact">
+                <a
+                  className="merchant__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={merchant.merchant_url}
+                >
+                  {merchant.merchant_url}
+                </a>
+              </li>
+              <li className="merchant__contact">
+                <span className="merchant__phone">
+                  {merchant.merchant_phone}
+                </span>
+              </li>
+              <li className="merchant__contact">
+                <span className="merchant__mail">
+                  {merchant.merchant_emails}
+                </span>
+              </li>
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

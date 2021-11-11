@@ -32,16 +32,16 @@ const Merchant = () => {
     }
   };
   return (
-    <div className="tabContent">
+    <section className="tab-content">
       <CustomTabs
         selected={tab}
         tabs={tabs}
         name="subTub"
         handleTab={value => setTab(value)}
-        className="subTab"
+        className="sub-tab"
       />
       {getContent()}
-    </div>
+    </section>
   );
 };
 
