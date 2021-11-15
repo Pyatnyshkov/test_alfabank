@@ -360,7 +360,7 @@ td {
 }
 
 
-/* !main_styles */
+/* !начало main_styles */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -465,9 +465,9 @@ h1, h2, h3, h4, p, figure {
   width: 1px !important;
   overflow: hidden;
 }
-/* !main_styles */
+/* !конец main_styles */
 
-/* !header */
+/* !начало header */
 .header {
   padding: 40px 0;
   display: flex;
@@ -499,14 +499,14 @@ h1, h2, h3, h4, p, figure {
   width: 15px;
   margin-right: 10px;
 }
-/* !header */
+/* !конец header */
 
 .main__page {
   display: flex;
   margin-top: 60px;
 }
 
-/* !merchants-list */
+/* !начало merchants-list */
 .aside {
   position: relative;
   height: 600px;
@@ -525,8 +525,8 @@ h1, h2, h3, h4, p, figure {
 
 .merchants-list {
   overflow: scroll;
-  margin-right: 80px;
   height: 100%;
+  margin-right: 60px;
 }
 
 .merchants-list::-webkit-scrollbar {
@@ -580,12 +580,12 @@ h1, h2, h3, h4, p, figure {
   margin-bottom: 7px;
 }
 
-/* !merchants-list */
+/* !конец merchants-list */
 
 
-/* !merchant */
+/* !начало merchant */
 .merchant {
-  margin-left: 80px;
+  margin-left: 60px;
   width: 100%;
 }
 
@@ -627,17 +627,10 @@ h1, h2, h3, h4, p, figure {
   display: flex;
 }
 
-.tabs-label {
-  position: relative;
-  display: block;
-  height: 100%;
-  z-index: 10;
-}
-
 .tab__item {
   min-width: 115px;
   position: relative;
-  min-height: 42px;
+  min-height: 46px;
 }
 
 .tab__item:not(:last-child) {
@@ -650,12 +643,12 @@ h1, h2, h3, h4, p, figure {
   align-items: center;
   justify-content: center;
   background-color: #F4F9FF;
-  text-align: center;
   cursor: pointer;
   color: #000000;
   font-size: 16px;
   line-height: 18px;
   padding: 5px;
+  text-align: center;
 }
 
 .tab__radio:checked ~ .tabs__name {
@@ -663,7 +656,6 @@ h1, h2, h3, h4, p, figure {
   color: #FFFFFF;
   cursor: default;
 }
-
 
 .tab-content,
 .subtab__content {

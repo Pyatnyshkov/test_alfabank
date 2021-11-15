@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from "react";
 
 import List from "./MerchantList/MerchantList";
-import Header from "./Header";
+import Header from "./Header/Header";
 import Analytics from "./Analytics";
 import MerchantCard from "./MerchantCard";
 
