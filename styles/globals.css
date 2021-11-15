@@ -629,7 +629,15 @@ h1, h2, h3, h4, p, figure {
 
 .tabs-label {
   position: relative;
+  display: block;
+  height: 100%;
   z-index: 10;
+}
+
+.tab__item {
+  min-width: 115px;
+  position: relative;
+  min-height: 42px;
 }
 
 .tab__item:not(:last-child) {
@@ -637,16 +645,17 @@ h1, h2, h3, h4, p, figure {
 }
 
 .tabs__name {
-  display: inline-block;
-  min-width: 115px;
-  position: relative;
-  height: 42px;
-  font-size: 16px;
-  line-height: 42px;
-  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #F4F9FF;
+  text-align: center;
   cursor: pointer;
   color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 5px;
 }
 
 .tab__radio:checked ~ .tabs__name {
@@ -655,94 +664,57 @@ h1, h2, h3, h4, p, figure {
   cursor: default;
 }
 
-.tabs__name::before {
-  content: '';
-  opacity: 0;
-  position: absolute;
-  bottom: -13px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 58px 0 58px;
-  border-color: #EE2A23 transparent transparent transparent;
-  line-height: 0px;
-  _border-color: #EE2A23 #000000 #000000 #000000;
-  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-}
 
-.tab__radio:checked ~ .tabs__name::before {
-  opacity: 1;
-}
-
-.tab-content {
+.tab-content,
+.subtab__content {
   margin-top: 40px;
 }
 
 .content__table {
-
   padding: 10px 0;
 }
 .content__table-colored {
   background-color: #F4F9FF;
-
 }
 
-/* Временные стили*/
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-.content-tabs {
-  display: flex;
-  align-items: center;
-}
 .bloc-tabs {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
 }
-.subtabs {
-  margin-top: 10px;
-  padding: 15px;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  outline: none;
 
+.subtabs {
+  width: 60px;
+  height: 40px;
+  border: none;
+  margin-right: 20px;
 }
+
 .subtabs:nth-child(1) {
-  padding: 10px 30px;
   background: url("img/mir.png") no-repeat center / 70%;
 }
 .subtabs:nth-child(2) {
-  /*padding: 10px 30px;*/
-  padding: 20px;
   background: url("img/maestro.png") no-repeat center / 100%;
 }
 .subtabs:nth-child(3) {
-  padding: 10px 30px;
   background: url("img/visa.png") no-repeat center / 70%;
 }
 .subtabs:nth-child(4) {
-  padding: 10px 30px;
   background: url("img/jcb.png") no-repeat center / 80%;
 }
 .subtabs:nth-child(5) {
-  padding: 10px 30px;
   background: url("img/cup.png") no-repeat center / 50%;
 }
 .subtabs:nth-child(6) {
-  padding: 10px 30px;
   background: url("img/amex.png") no-repeat center / 100%;
-
 }
 
 .active-tabs  {
   z-index: 1;
   position: relative;
+  border: none;
 }
+
 .active-tabs:before {
   content: '';
   position: absolute;
@@ -751,20 +723,17 @@ h1, h2, h3, h4, p, figure {
   width: 100%;
   left: 0;
 }
-button {
-  border: none;
-}
 
 .content {
-  background: white;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
   display: none;
 }
 
+.content-tabs {
+  display: flex;
+}
 
 .active-content {
   display: block;
+  margin-left: 10px;
 }
 

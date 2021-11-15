@@ -8,7 +8,7 @@ const PaySystems = () => {
     };
 
     return (
-        <div className="container">
+        <div className="subtab__content">
             <div className="bloc-tabs">
                 <button
                     className={toggleState === 1 ? "subtabs active-tabs" : "subtabs"}
@@ -46,7 +46,6 @@ const PaySystems = () => {
 
                 </button>
             </div>
-            <div>
                 <div className="content-tabs">
                     <strong>ID: </strong>
                     <div
@@ -94,7 +93,6 @@ const PaySystems = () => {
                         </p>
                     </div>
                 </div>
-            </div>
         </div>
     );
 };
