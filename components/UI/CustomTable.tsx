@@ -1,17 +1,6 @@
-import React, {useState} from "react";
+import React from 'react';
 
-const PaymentPage = () => {
-    const [toggleLanguage, setToggleLanguage] = useState(false)
-    const [toggleMultilanguage, setToggleMultilanguage] = useState(false)
-
-    const onHandleToggle = () => {
-        setToggleLanguage(toggleLanguage => !toggleLanguage)
-    }
-
-    const onHandleMultiToggle = () => {
-        setToggleMultilanguage(toggleMultilanguage => !toggleMultilanguage)
-    }
-
+const CustomTable = () => {
     return (
         <table >
             <tr className="content__table-colored">
@@ -20,37 +9,11 @@ const PaymentPage = () => {
             </tr>
             <tr className='content__table'>
                 <td>Языки</td>
-                <td>
-                    <ul className='table-list'>
-                        <li
-                            className={`table-list__item ${!toggleLanguage ? '' : 'tab-choose'}`}
-                            onClick={onHandleToggle}
-                        >RU</li>
-                        <li
-                            className={`table-list__item ${!toggleLanguage ? 'tab-choose' : ''}`}
-                            onClick={onHandleToggle}
-                        >EN</li>
-
-                    </ul>
-                </td>
+                <td>ru / en</td>
             </tr>
             <tr className="content__table-colored">
                 <td>Мультиязычность</td>
-                {/* Кошмарный переключатель мультиязычности*/}
-                <ul className='table-list'>
-                    <li
-                        className={`table-list__check ${!toggleMultilanguage ? 'table-list__circle': ''}`}
-                        onClick={onHandleMultiToggle}
-                    >
-
-                    </li>
-                    <li
-                        className={`table-list__cross ${!toggleMultilanguage ? '': 'table-list__circle'}`}
-                        onClick={onHandleMultiToggle}
-                    >
-
-                    </li>
-                </ul>
+                <td>yes / no</td>
             </tr>
             <tr className='content__table'>
                 <td>Логин финальной страницы</td>
@@ -81,7 +44,7 @@ const PaymentPage = () => {
                 <td>fail_url</td>
             </tr>
         </table>
-    )
+    );
 };
 
-export default PaymentPage;
+export default CustomTable;

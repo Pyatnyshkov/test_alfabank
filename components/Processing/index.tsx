@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import CustomTabs from "../UI/CustomTabs";
 import Settings from './Settings';
-import PaySystems from './PaySystems/PaySystems';
+import PaySystems from './PaySystems';
 import PaymentPage from './PaymentPage';
 import PayTypes from './PayTypes';
 import SendSettings from './SendSettings';
@@ -31,6 +31,9 @@ const Processing = () => {
       value: "SendSettings"
     }
   ];
+  const b = () => {
+
+  }
   const getContent = () => {
     switch (tab) {
       case 'Settings':

@@ -14,13 +14,11 @@ const PaySystems = () => {
                     className={toggleState === 1 ? "subtabs active-tabs" : "subtabs"}
                     onClick={() => toggleTab(1)}
                 >
-
                 </button>
                 <button
                     className={toggleState === 2 ? "subtabs active-tabs" : "subtabs"}
                     onClick={() => toggleTab(2)}
                 >
-
                 </button>
                 <button
                     className={toggleState === 3 ? "subtabs active-tabs" : "subtabs"}
@@ -31,19 +29,16 @@ const PaySystems = () => {
                     className={toggleState === 4 ? "subtabs active-tabs" : "subtabs"}
                     onClick={() => toggleTab(4)}
                 >
-
                 </button>
                 <button
                     className={toggleState === 5 ? "subtabs active-tabs" : "subtabs"}
                     onClick={() => toggleTab(5)}
                 >
-
                 </button>
                 <button
                     className={toggleState === 6 ? "subtabs active-tabs" : "subtabs"}
                     onClick={() => toggleTab(6)}
                 >
-
                 </button>
             </div>
             <div>

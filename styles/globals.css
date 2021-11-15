@@ -689,14 +689,17 @@ h1, h2, h3, h4, p, figure {
   display: flex;
   flex-direction: column;
 }
+
 .content-tabs {
   display: flex;
   align-items: center;
 }
+
 .bloc-tabs {
   display: flex;
   justify-content: space-around;
 }
+
 .subtabs {
   margin-top: 10px;
   padding: 15px;
@@ -704,32 +707,78 @@ h1, h2, h3, h4, p, figure {
   cursor: pointer;
   position: relative;
   outline: none;
-
 }
+
 .subtabs:nth-child(1) {
   padding: 10px 30px;
   background: url("img/mir.png") no-repeat center / 70%;
 }
+
 .subtabs:nth-child(2) {
   /*padding: 10px 30px;*/
   padding: 20px;
   background: url("img/maestro.png") no-repeat center / 100%;
 }
+
 .subtabs:nth-child(3) {
   padding: 10px 30px;
   background: url("img/visa.png") no-repeat center / 70%;
 }
+
 .subtabs:nth-child(4) {
   padding: 10px 30px;
   background: url("img/jcb.png") no-repeat center / 80%;
 }
+
 .subtabs:nth-child(5) {
   padding: 10px 30px;
   background: url("img/cup.png") no-repeat center / 50%;
 }
+
 .subtabs:nth-child(6) {
   padding: 10px 30px;
   background: url("img/amex.png") no-repeat center / 100%;
+
+}
+
+.payTabs {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+
+}
+
+.payTabs:nth-child(1) {
+  padding: 10px 30px;
+  background: url("img/sbp.svg") no-repeat center / contain;
+}
+
+.payTabs:nth-child(2) {
+  /*padding: 10px 30px;*/
+  padding: 30px;
+  background: url("img/google-pay.svg") no-repeat center / contain;
+}
+
+.payTabs:nth-child(3) {
+  padding: 10px 30px;
+  background: url("img/apple-pay.svg") no-repeat center / contain;
+}
+
+.payTabs:nth-child(4) {
+  padding: 10px 30px;
+  background: url("img/samsung-pay.svg") no-repeat center / contain;
+}
+
+.payTabs:nth-child(5) {
+  padding: 10px 30px;
+  background: url("img/card-pay.svg") no-repeat center / 70%;
+}
+
+.payTabs:nth-child(6) {
+  padding: 10px 30px;
+  background: url("img/mts-bank.svg") no-repeat center / 100%;
 
 }
 
@@ -737,6 +786,7 @@ h1, h2, h3, h4, p, figure {
   z-index: 1;
   position: relative;
 }
+
 .active-tabs:before {
   content: '';
   position: absolute;
@@ -745,6 +795,7 @@ h1, h2, h3, h4, p, figure {
   width: 100%;
   left: 0;
 }
+
 button {
   border: none;
 }
@@ -756,6 +807,87 @@ button {
   height: 100%;
   display: none;
 }
+
+.tab-choose {
+  background-color: #f03226;
+  /*padding: 5px;*/
+  border-radius: 5px;
+  max-width: fit-content;
+}
+
+.table-list {
+  display: flex;
+  align-items: center;
+}
+
+.table-list__item {
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.table-list__check {
+  position: relative;
+  top: 0;
+}
+
+.table-list__check:before, .table-list__check:after {
+  left: 15px;
+  top: 8px;
+  position: absolute;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #333;
+}
+.table-list__check:before {
+  transform: rotate(45deg);
+}
+.table-list__check:after {
+  transform: rotate(-45deg);
+}
+
+.table-list__cross {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 30px;
+  top: 0;
+}
+
+.table-list__cross::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 50%;
+  width: 2px;
+  background-color: #333;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+.table-list__cross::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #336699;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+
+}
+
+.table-list__circle {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
 
 
 .active-content {
