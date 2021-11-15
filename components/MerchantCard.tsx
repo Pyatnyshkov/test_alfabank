@@ -44,7 +44,6 @@ const MerchantCard: FC = () => {
   };
   return (
     <article className="merchant-card">
-      <h2 className="visually-hidden">{merchant.merchant_full_name}</h2>
       <header className="merchant-card-header">
         <h3 className="merchant-card__title">{merchant.merchant_full_name}</h3>
         <span
@@ -63,6 +62,7 @@ const MerchantCard: FC = () => {
             selected={tab}
             tabs={tabs}
             name="mainTab"
+            className="center-list"
         />
         {getContent()}
       </main>

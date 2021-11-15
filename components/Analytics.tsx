@@ -3,7 +3,7 @@ import React, {FC} from "react";
 const Analytics: FC = () => {
     return (
         <div className="analytics">
-            Аналитика
+            <h3 className="merchant-card__title">Аналитика</h3>
         </div>
     )
 };

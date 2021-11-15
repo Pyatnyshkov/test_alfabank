@@ -360,7 +360,7 @@ td {
 }
 
 
-/* !main_styles */
+/* !начало main_styles */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -446,6 +446,7 @@ h1, h2 {
 h1, h2, h3, h4, p, figure {
   padding: 0;
   margin: 0;
+  font-weight: 400;
 }
 
 .container {
@@ -464,9 +465,9 @@ h1, h2, h3, h4, p, figure {
   width: 1px !important;
   overflow: hidden;
 }
-/* !main_styles */
+/* !конец main_styles */
 
-/* !header */
+/* !начало header */
 .header {
   padding: 40px 0;
   display: flex;
@@ -498,14 +499,14 @@ h1, h2, h3, h4, p, figure {
   width: 15px;
   margin-right: 10px;
 }
-/* !header */
+/* !конец header */
 
 .main__page {
   display: flex;
   margin-top: 60px;
 }
 
-/* !merchants-list */
+/* !начало merchants-list */
 .aside {
   position: relative;
   height: 600px;
@@ -524,8 +525,8 @@ h1, h2, h3, h4, p, figure {
 
 .merchants-list {
   overflow: scroll;
-  margin-right: 80px;
   height: 100%;
+  margin-right: 60px;
 }
 
 .merchants-list::-webkit-scrollbar {
@@ -540,12 +541,8 @@ h1, h2, h3, h4, p, figure {
   width: 340px;
 }
 
-.merchant__elem:last-child {
-  margin-bottom: 0;
-}
-
 .merchant__button {
-  padding: 25px 15px;
+  padding: 20px 15px;
   width: 100%;
   height: 100%;
   border: none;
@@ -580,23 +577,28 @@ h1, h2, h3, h4, p, figure {
 }
 
 .merchant__contact {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
-/* !header */
 
-.merchant-card {
-  margin-left: 80px;
+/* !конец merchants-list */
+
+
+/* !начало merchant */
+.merchant {
+  margin-left: 60px;
+  width: 100%;
 }
 
 .merchant-card-header {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .merchant-card__title {
-  margin-right: 10px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .merchant-card__active {
@@ -612,6 +614,10 @@ h1, h2, h3, h4, p, figure {
   background-color: #eb7e63;
 }
 
+.merchant-card-list.center-list {
+  justify-content: center;
+}
+
 .tab__radio {
   display: none;
 }
@@ -621,19 +627,10 @@ h1, h2, h3, h4, p, figure {
   display: flex;
 }
 
-.tabs:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: 1px;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid rgba(11,31,53,.3);
-}
-
-.tabs-label {
+.tab__item {
+  min-width: 115px;
   position: relative;
-  z-index: 10;
+  min-height: 46px;
 }
 
 .tab__item:not(:last-child) {
@@ -641,48 +638,38 @@ h1, h2, h3, h4, p, figure {
 }
 
 .tabs__name {
-  cursor: pointer;
-  padding: 12px 0;
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(11,31,53,.6);
-  text-align: center;
-  min-height: 51px;
+  height: 100%;
   display: flex;
   align-items: center;
-  position: relative;
-}
-
-.tabs__name:hover {
-  color: rgba(11,31,53,.95);
+  justify-content: center;
+  background-color: #F4F9FF;
+  cursor: pointer;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 5px;
+  text-align: center;
 }
 
 .tab__radio:checked ~ .tabs__name {
-  color: rgba(11,31,53,.95);
+  background-color: #EE2A23;
+  color: #FFFFFF;
   cursor: default;
 }
 
-.tab__radio:checked ~ .tabs__name::before {
-  content: '';
-  position: absolute;
-  border-bottom: 3px solid #f03226;
-  bottom: -1px;
-  width: 100%;
-}
-
-.tab-content {
-  margin-top: 10px;
+.tab-content,
+.subtab__content {
+  margin-top: 40px;
 }
 
 .content__table {
-
   padding: 10px 0;
 }
 .content__table-colored {
   background-color: #F4F9FF;
-
 }
 
+<<<<<<< HEAD
 /* Временные стили*/
 
 .container {
@@ -695,50 +682,52 @@ h1, h2, h3, h4, p, figure {
   align-items: center;
 }
 
+=======
+>>>>>>> master
 .bloc-tabs {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .subtabs {
+<<<<<<< HEAD
   margin-top: 10px;
   padding: 15px;
   text-align: center;
   cursor: pointer;
   position: relative;
   outline: none;
+=======
+  width: 60px;
+  height: 40px;
+  border: none;
+  margin-right: 20px;
+>>>>>>> master
 }
 
 .subtabs:nth-child(1) {
-  padding: 10px 30px;
   background: url("img/mir.png") no-repeat center / 70%;
 }
 
 .subtabs:nth-child(2) {
-  /*padding: 10px 30px;*/
-  padding: 20px;
   background: url("img/maestro.png") no-repeat center / 100%;
 }
 
 .subtabs:nth-child(3) {
-  padding: 10px 30px;
   background: url("img/visa.png") no-repeat center / 70%;
 }
 
 .subtabs:nth-child(4) {
-  padding: 10px 30px;
   background: url("img/jcb.png") no-repeat center / 80%;
 }
 
 .subtabs:nth-child(5) {
-  padding: 10px 30px;
   background: url("img/cup.png") no-repeat center / 50%;
 }
 
 .subtabs:nth-child(6) {
-  padding: 10px 30px;
   background: url("img/amex.png") no-repeat center / 100%;
-
 }
 
 .payTabs {
@@ -785,6 +774,7 @@ h1, h2, h3, h4, p, figure {
 .active-tabs  {
   z-index: 1;
   position: relative;
+  border: none;
 }
 
 .active-tabs:before {
@@ -795,19 +785,19 @@ h1, h2, h3, h4, p, figure {
   width: 100%;
   left: 0;
 }
+<<<<<<< HEAD
 
 button {
   border: none;
 }
+=======
+>>>>>>> master
 
 .content {
-  background: white;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
   display: none;
 }
 
+<<<<<<< HEAD
 .tab-choose {
   background-color: #f03226;
   /*padding: 5px;*/
@@ -889,8 +879,14 @@ button {
 }
 
 
+=======
+.content-tabs {
+  display: flex;
+}
+>>>>>>> master
 
 .active-content {
   display: block;
+  margin-left: 10px;
 }
 

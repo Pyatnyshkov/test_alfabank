@@ -9,7 +9,7 @@ interface IList {
     selected: Merchant;
 }
 
-const MerchantCard: React.FC<IList> = ({merchant, selected}) => {
+const MerchantCard: React.FC<IList> = ({ merchant, selected }) => {
     const dispatch = useAppDispatch();
     const selectMerchant = (merchant: Merchant) => {
         if (selected.merchant_full_name === merchant.merchant_full_name) {
@@ -32,12 +32,12 @@ const MerchantCard: React.FC<IList> = ({merchant, selected}) => {
                 </h2>
                 <ul className="merchant-contacts-list">
                     <li className="merchant__contact">
-                        <a
-                            className="merchant__link"
+                        <a className="merchant__link"
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={merchant.merchant_url} >
-                            {merchant.merchant_url}
+                            href={merchant.merchant_url} 
+                        >
+                                {merchant.merchant_url}
                         </a>
                     </li>
                     <li className="merchant__contact">
@@ -47,7 +47,7 @@ const MerchantCard: React.FC<IList> = ({merchant, selected}) => {
                     </li>
                     <li className="merchant__contact">
                         <span className="merchant__mail">
-                            {merchant.merchant_emails}
+                            {merchant.merchant_feedback_email}
                         </span>
                     </li>
                 </ul>
