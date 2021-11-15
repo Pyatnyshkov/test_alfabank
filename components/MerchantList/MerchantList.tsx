@@ -6,9 +6,8 @@ const List: FC = () => {
     const merchants = useAppSelector(state => state.app.merchants);
     const selected = useAppSelector(state => state.app.merchant);
     const merchantList = merchants.map((merchant) => (
-        <MerchantCard merchant={merchant} key={merchant.merchant_full_name} selected={selected} />
+        <MerchantCard merchant={ merchant } key={ merchant.merchant_full_name } selected={ selected } />
     ))
-    
 
     return (
         <nav className="aside">

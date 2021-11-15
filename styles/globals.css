@@ -435,6 +435,7 @@ h1, h2 {
 h1, h2, h3, h4, p, figure {
   padding: 0;
   margin: 0;
+  font-weight: 400;
 }
 
 .container {
@@ -529,12 +530,8 @@ h1, h2, h3, h4, p, figure {
   width: 340px;
 }
 
-.merchant__elem:last-child {
-  margin-bottom: 0;
-}
-
 .merchant__button {
-  padding: 25px 15px;
+  padding: 20px 15px;
   width: 100%;
   height: 100%;
   border: none;
@@ -569,23 +566,28 @@ h1, h2, h3, h4, p, figure {
 }
 
 .merchant__contact {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
-/* !header */
 
-.merchant-card {
+/* !merchants-list */
+
+
+/* !merchant */
+.merchant {
   margin-left: 80px;
+  width: 100%;
 }
 
 .merchant-card-header {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .merchant-card__title {
-  margin-right: 10px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .merchant-card__active {
@@ -601,6 +603,10 @@ h1, h2, h3, h4, p, figure {
   background-color: #eb7e63;
 }
 
+.merchant-card-list.center-list {
+  justify-content: center;
+}
+
 .tab__radio {
   display: none;
 }
@@ -608,16 +614,6 @@ h1, h2, h3, h4, p, figure {
 .tabs {
   position: relative;
   display: flex;
-}
-
-.tabs:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: 1px;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid rgba(11,31,53,.3);
 }
 
 .tabs-label {
@@ -630,37 +626,47 @@ h1, h2, h3, h4, p, figure {
 }
 
 .tabs__name {
-  cursor: pointer;
-  padding: 12px 0;
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(11,31,53,.6);
-  text-align: center;
-  min-height: 51px;
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  min-width: 115px;
   position: relative;
-}
-
-.tabs__name:hover {
-  color: rgba(11,31,53,.95);
+  height: 42px;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #F4F9FF;
+  cursor: pointer;
+  color: #000000;
 }
 
 .tab__radio:checked ~ .tabs__name {
-  color: rgba(11,31,53,.95);
+  background-color: #EE2A23;
+  color: #FFFFFF;
   cursor: default;
 }
 
-.tab__radio:checked ~ .tabs__name::before {
+.tabs__name::before {
   content: '';
+  opacity: 0;
   position: absolute;
-  border-bottom: 3px solid #f03226;
-  bottom: -1px;
+  bottom: -13px;
+  left: 0;
+  right: 0;
   width: 100%;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 58px 0 58px;
+  border-color: #EE2A23 transparent transparent transparent;
+  line-height: 0px;
+  _border-color: #EE2A23 #000000 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+.tab__radio:checked ~ .tabs__name::before {
+  opacity: 1;
 }
 
 .tab-content {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .subtab .tabs__name {
