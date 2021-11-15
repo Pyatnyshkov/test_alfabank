@@ -339,7 +339,18 @@ summary {
 template {
   display: none;
 }
+/*
+Table styles
+*/
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
 
+td {
+  padding: 10px 0 10px 5px;
+}
 /**
  * Add the correct display in IE 10.
  */
@@ -669,11 +680,91 @@ h1, h2, h3, h4, p, figure {
   margin-top: 40px;
 }
 
-.subtab .tabs__name {
-  font-size: 14px;
-  padding: 8px 0;
+.content__table {
+
+  padding: 10px 0;
+}
+.content__table-colored {
+  background-color: #F4F9FF;
+
 }
 
-.subtab__content {
-  margin-top: 15px;
+/* Временные стили*/
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
+.content-tabs {
+  display: flex;
+  align-items: center;
+}
+.bloc-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.subtabs {
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+
+}
+.subtabs:nth-child(1) {
+  padding: 10px 30px;
+  background: url("img/mir.png") no-repeat center / 70%;
+}
+.subtabs:nth-child(2) {
+  /*padding: 10px 30px;*/
+  padding: 20px;
+  background: url("img/maestro.png") no-repeat center / 100%;
+}
+.subtabs:nth-child(3) {
+  padding: 10px 30px;
+  background: url("img/visa.png") no-repeat center / 70%;
+}
+.subtabs:nth-child(4) {
+  padding: 10px 30px;
+  background: url("img/jcb.png") no-repeat center / 80%;
+}
+.subtabs:nth-child(5) {
+  padding: 10px 30px;
+  background: url("img/cup.png") no-repeat center / 50%;
+}
+.subtabs:nth-child(6) {
+  padding: 10px 30px;
+  background: url("img/amex.png") no-repeat center / 100%;
+
+}
+
+.active-tabs  {
+  z-index: 1;
+  position: relative;
+}
+.active-tabs:before {
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid #f03226;
+  bottom: -1px;
+  width: 100%;
+  left: 0;
+}
+button {
+  border: none;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+
+.active-content {
+  display: block;
+}
+
