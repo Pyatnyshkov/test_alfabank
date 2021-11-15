@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react";
 
-import List from "./List";
+import List from "./MerchantList/MerchantList";
 import Header from "./Header";
 import Analytics from "./Analytics";
 import MerchantCard from "./MerchantCard";
@@ -21,11 +21,13 @@ const App: FC<AppProps> = ({ items }) => {
   }, [items]);
 
   return (
-    <div className="page">
+    <div className="page container">
       <Header />
-      <List />
       <main className="main__page">
-          {merchant.merchant_full_name ? <MerchantCard /> : <Analytics />}
+          <List />
+          <div className="merchant-card">
+            { merchant.merchant_full_name ? <MerchantCard /> : <Analytics /> }
+          </div>
       </main>
     </div>
   );
