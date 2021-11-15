@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import CustomTabs from "../UI/CustomTabs";
 import Settings from './Settings';
-import PaySystems from './PaySystems';
+import PaySystems from './PaySystems/PaySystems';
 import PaymentPage from './PaymentPage';
 import PayTypes from './PayTypes';
 import SendSettings from './SendSettings';
