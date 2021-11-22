@@ -70,4 +70,4 @@ const MerchantCard: FC = () => {
   );
 };
 
-export default MerchantCard;
+export default React.memo(MerchantCard);

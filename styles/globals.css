@@ -491,6 +491,7 @@ h1, h2, h3, h4, p, figure {
   border-radius: 4px;
   padding: 7px 13px;
   cursor: pointer;
+  display: none;
 }
 
 .header__filter-logo {
@@ -669,7 +670,6 @@ h1, h2, h3, h4, p, figure {
   background-color: #F4F9FF;
 }
 
-<<<<<<< HEAD
 /* Временные стили*/
 
 .container {
@@ -682,8 +682,6 @@ h1, h2, h3, h4, p, figure {
   align-items: center;
 }
 
-=======
->>>>>>> master
 .bloc-tabs {
   display: flex;
   align-items: center;
@@ -691,19 +689,16 @@ h1, h2, h3, h4, p, figure {
 }
 
 .subtabs {
-<<<<<<< HEAD
   margin-top: 10px;
   padding: 15px;
   text-align: center;
   cursor: pointer;
   position: relative;
   outline: none;
-=======
   width: 60px;
   height: 40px;
   border: none;
   margin-right: 20px;
->>>>>>> master
 }
 
 .subtabs:nth-child(1) {
@@ -785,19 +780,16 @@ h1, h2, h3, h4, p, figure {
   width: 100%;
   left: 0;
 }
-<<<<<<< HEAD
 
 button {
   border: none;
 }
-=======
->>>>>>> master
 
 .content {
-  display: none;
+  display: block;
+  margin-left: 10px;
 }
 
-<<<<<<< HEAD
 .tab-choose {
   background-color: #f03226;
   /*padding: 5px;*/
@@ -822,8 +814,8 @@ button {
 }
 
 .table-list__check:before, .table-list__check:after {
-  left: 15px;
-  top: 8px;
+  left: 14px;
+  top: 7px;
   position: absolute;
   content: ' ';
   height: 18px;
@@ -842,7 +834,6 @@ button {
   display: inline-block;
   width: 18px;
   height: 18px;
-  left: 30px;
   top: 0;
 }
 
@@ -878,15 +869,8 @@ button {
   background-color: transparent;
 }
 
-
-=======
 .content-tabs {
   display: flex;
 }
->>>>>>> master
 
-.active-content {
-  display: block;
-  margin-left: 10px;
-}
 

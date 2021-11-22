@@ -31,9 +31,6 @@ const Processing = () => {
       value: "SendSettings"
     }
   ];
-  const b = () => {
-
-  }
   const getContent = () => {
     switch (tab) {
       case 'Settings':

@@ -24,10 +24,10 @@ const App: FC<AppProps> = ({ items }) => {
     <div className="page container">
       <Header />
       <main className="main__page">
-          <List />
-          <div className="merchant">
-            { merchant.merchant_full_name ? <MerchantCard /> : <Analytics /> }
-          </div>
+        <List />
+        <div className="merchant">
+          {merchant.merchant_full_name ? <MerchantCard /> : <Analytics />}
+        </div>
       </main>
     </div>
   );
