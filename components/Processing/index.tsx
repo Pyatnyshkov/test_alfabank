@@ -6,6 +6,7 @@ import PaySystems from './PaySystems';
 import PaymentPage from './PaymentPage';
 import PayTypes from './PayTypes';
 import SendSettings from './SendSettings';
+import Notifications from "./Notifications";
 
 const Processing = () => {
   const [tab, setTab] = useState("Settings");
@@ -29,6 +30,10 @@ const Processing = () => {
     {
       name: "Передача параметров",
       value: "SendSettings"
+    },
+    {
+      name: "Уведомления",
+      value: 'SendNotifications'
     }
   ];
   const b = () => {
@@ -46,6 +51,8 @@ const Processing = () => {
         return <PayTypes />;
       case 'SendSettings':
         return <SendSettings />;
+      case 'SendNotifications':
+        return <Notifications/>
     }
   };
   return (

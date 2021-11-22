@@ -13,6 +13,7 @@ const PaymentPage = () => {
     }
 
     return (
+        <div className="subtab__content">
         <table >
             <tr className="content__table-colored">
                 <td>Логин</td>
@@ -81,6 +82,7 @@ const PaymentPage = () => {
                 <td>fail_url</td>
             </tr>
         </table>
+        </div>
     )
 };
 

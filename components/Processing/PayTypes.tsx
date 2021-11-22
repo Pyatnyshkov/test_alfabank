@@ -6,7 +6,7 @@ const PayTypes = () => {
 
 
     return (
-        <div>
+        <div className="subtab__content">
             <div className='bloc-tabs'>
                 <button
                     className={toggleState === 1 ? "payTabs active-tabs" : "payTabs"}

@@ -668,8 +668,6 @@ h1, h2, h3, h4, p, figure {
 .content__table-colored {
   background-color: #F4F9FF;
 }
-
-<<<<<<< HEAD
 /* Временные стили*/
 
 .container {
@@ -682,28 +680,24 @@ h1, h2, h3, h4, p, figure {
   align-items: center;
 }
 
-=======
->>>>>>> master
 .bloc-tabs {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: space-around;
 }
 
 .subtabs {
-<<<<<<< HEAD
   margin-top: 10px;
   padding: 15px;
   text-align: center;
   cursor: pointer;
   position: relative;
   outline: none;
-=======
   width: 60px;
   height: 40px;
   border: none;
   margin-right: 20px;
->>>>>>> master
 }
 
 .subtabs:nth-child(1) {
@@ -745,8 +739,7 @@ h1, h2, h3, h4, p, figure {
 }
 
 .payTabs:nth-child(2) {
-  /*padding: 10px 30px;*/
-  padding: 30px;
+  padding: 10px 30px;
   background: url("img/google-pay.svg") no-repeat center / contain;
 }
 
@@ -762,7 +755,7 @@ h1, h2, h3, h4, p, figure {
 
 .payTabs:nth-child(5) {
   padding: 10px 30px;
-  background: url("img/card-pay.svg") no-repeat center / 70%;
+  background: url("img/card-pay.svg") no-repeat center / contain;
 }
 
 .payTabs:nth-child(6) {
@@ -785,19 +778,15 @@ h1, h2, h3, h4, p, figure {
   width: 100%;
   left: 0;
 }
-<<<<<<< HEAD
 
 button {
   border: none;
 }
-=======
->>>>>>> master
 
 .content {
   display: none;
 }
 
-<<<<<<< HEAD
 .tab-choose {
   background-color: #f03226;
   /*padding: 5px;*/
@@ -818,7 +807,7 @@ button {
 
 .table-list__check {
   position: relative;
-  top: 0;
+  left: 0;
 }
 
 .table-list__check:before, .table-list__check:after {
@@ -879,11 +868,9 @@ button {
 }
 
 
-=======
 .content-tabs {
   display: flex;
 }
->>>>>>> master
 
 .active-content {
   display: block;
