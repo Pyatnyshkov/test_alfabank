@@ -36,9 +36,6 @@ const Processing = () => {
       value: 'SendNotifications'
     }
   ];
-  const b = () => {
-
-  }
   const getContent = () => {
     switch (tab) {
       case 'Settings':

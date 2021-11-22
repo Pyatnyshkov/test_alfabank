@@ -491,6 +491,7 @@ h1, h2, h3, h4, p, figure {
   border-radius: 4px;
   padding: 7px 13px;
   cursor: pointer;
+  display: none;
 }
 
 .header__filter-logo {
@@ -668,6 +669,10 @@ h1, h2, h3, h4, p, figure {
 .content__table-colored {
   background-color: #F4F9FF;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 /* Временные стили*/
 
 .container {
@@ -784,7 +789,8 @@ button {
 }
 
 .content {
-  display: none;
+  display: block;
+  margin-left: 10px;
 }
 
 .tab-choose {
@@ -811,8 +817,8 @@ button {
 }
 
 .table-list__check:before, .table-list__check:after {
-  left: 15px;
-  top: 8px;
+  left: 14px;
+  top: 7px;
   position: absolute;
   content: ' ';
   height: 18px;
@@ -831,7 +837,6 @@ button {
   display: inline-block;
   width: 18px;
   height: 18px;
-  left: 30px;
   top: 0;
 }
 
@@ -867,13 +872,12 @@ button {
   background-color: transparent;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .content-tabs {
   display: flex;
 }
 
-.active-content {
-  display: block;
-  margin-left: 10px;
-}
 
