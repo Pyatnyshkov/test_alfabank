@@ -4,7 +4,22 @@ const PayTypes = () => {
 
     const [toggleState, setToggleState] = useState(1);
 
-
+    const getContent = () => {
+        switch (toggleState) {
+            case 1:
+                return '1';
+            case 2:
+                return '2'
+            case 3:
+                return '3'
+            case 4:
+                return '4'
+            case 5:
+                return '5'
+            case 6:
+                return '6'
+        }
+    }
     return (
         <div className="subtab__content">
             <div className='bloc-tabs'>
@@ -46,39 +61,10 @@ const PayTypes = () => {
                 </button>
             </div>
 
-            <div className="content-tabs">
-                <strong>ID:</strong>
-                <div className={toggleState === 1 ? "content  active-content" : "content"}>
-                    <p>
-                        DATA VARIANT №1
-                    </p>
+                <div className="content-tabs">
+                    <strong>ID: </strong>
+                    <div className="content">{getContent()}</div>
                 </div>
-                <div className={toggleState === 2 ? "content  active-content" : "content"}>
-                    <p>
-                        DATA VARIANT №2
-                    </p>
-                </div>
-                <div className={toggleState === 3 ? "content  active-content" : "content"}>
-                    <p>
-                        DATA VARIANT №3
-                    </p>
-                </div>
-                <div className={toggleState === 4 ? "content  active-content" : "content"}>
-                    <p>
-                        DATA VARIANT №4
-                    </p>
-                </div>
-                <div className={toggleState === 5 ? "content  active-content" : "content"}>
-                    <p>
-                        DATA VARIANT №5
-                    </p>
-                </div>
-                <div className={toggleState === 6 ? "content  active-content" : "content"}>
-                    <p>
-                        DATA VARIANT №6
-                    </p>
-                </div>
-            </div>
         </div>
     );
 };

@@ -1,26 +1,72 @@
 import React, { useState } from "react";
+import {useAppSelector} from "../../helpers/redux-hooks";
 
 const PaySystems = () => {
   const [toggleState, setToggleState] = useState(1);
-
+  const app = useAppSelector(state => state.app)
   const toggleTab = (index: any) => {
     setToggleState(index);
   };
 
+
+  const checkData = {
+    checkMirData: function () {
+      if (app.merchant.mir_3ds_id) {
+        return app.merchant.mir_3ds_id
+      } else {
+        return '-'
+      }
+    },
+    checkMcData: function () {
+      if(app.merchant.master_card_3ds_id){
+        return app.merchant.master_card_3ds_id
+      } else {
+        return '-'
+      }
+    },
+    checkVisaData: function () {
+      if(app.merchant.visa_3ds_id){
+        return app.merchant.visa_3ds_id
+      } else {
+        return '-'
+      }
+    },
+    checkJcbData: function () {
+      if(app.merchant.jcb_3ds_id){
+        return app.merchant.jcb_3ds_id
+      } else {
+        return '-'
+      }
+    },
+    checkCupData: function () {
+      if(app.merchant.amex_3ds_id){
+        return app.merchant.cup_3ds_id
+      } else {
+        return '-'
+      }
+    },
+    checkAmexData: function () {
+      if(app.merchant.amex_3ds_id){
+        return app.merchant.amex_3ds_id
+      } else {
+        return '-'
+      }
+    }
+  }
   const getContent = () => {
     switch (toggleState) {
       case 1:
-        return 'mir_terminal_id';
+        return checkData.checkMirData()
       case 2:
-        return 'mc_3ds_id';
+        return  checkData.checkMcData();
       case 3:
-        return 'visa_3ds_id';
+        return checkData.checkVisaData();
       case 4:
-        return 'card_accept_code';
+        return checkData.checkJcbData();
       case 5:
-        return 'CUP_3ds_id';
+        return checkData.checkCupData();
       case 6:
-        return 'amex_3ds_id';
+        return checkData.checkAmexData();
     }
   };
 
