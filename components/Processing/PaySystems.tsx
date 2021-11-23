@@ -21,7 +21,9 @@ const PaySystems = () => {
     amex_3ds: merchant.amex_3ds_id
   };
 
-  const apply = Object.keys(paymentSystems).filter(x => x);
+  const apply = Object.keys(paymentSystems).filter(
+    (paymentSystem: string) => paymentSystems[paymentSystem]
+  );
 
   return (
     <div className="subtab__content">
