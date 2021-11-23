@@ -2,16 +2,16 @@ import React, { FC } from "react";
 import { useAppSelector } from "../../helpers/redux-hooks";
 import includeOption from '../../helpers/includeOption';
 
-interface IArrya {
-	locales: string[]
+interface IArray {
+	locales: [],
 }
 
 const PaymentPage: FC = () => {
 	const merchant: any = useAppSelector(state => state.app.merchant);
-	const language: IArrya = merchant.locales.map((language: string, key: number) => (
+	const languages: IArray = merchant.locales.map((language: string, key: number, languages: []) => (
 		<li key={key}>
 			{language}
-			{language.length === (key + 1) ? ' ' : `,`}
+			{languages.length === (key + 1) ? ' ' : `,`}
 			&nbsp;
 		</li>
 	));
@@ -32,7 +32,7 @@ const PaymentPage: FC = () => {
 					<td>Название языков</td>
 					<td>
 						<ul className="table-list">
-							{language}
+							{languages}
 						</ul>
 					</td>
 				</tr>

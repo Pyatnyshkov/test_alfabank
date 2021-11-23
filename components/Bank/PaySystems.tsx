@@ -1,7 +1,14 @@
 import React, { FC } from "react";
 
 const PaySystems: FC = () => {
-    return <div className="subtab__content">PaySystems</div>;
+    return (
+        <table className="subtab__content">
+            <thead>
+                
+            </thead>
+            <tbody></tbody>
+        </table>
+    );
 };
 
 export default PaySystems;
