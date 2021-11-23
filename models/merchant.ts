@@ -43,7 +43,7 @@ export interface Merchant extends IObjectKeys {
   card_acceptor_code?: string;
   agreement_url?: string;
   default_language?: string;
-  locales?: string;
+  locales?: string[];
   finish_page_login?: string;
   use_multi_language_payment_page?: boolean;
   signer_token?: string;

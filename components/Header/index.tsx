@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-const Header: FC = () => {
+const Index: FC = () => {
   return (
     <header className="header">
       <h1 className="header__title">
@@ -14,4 +14,4 @@ const Header: FC = () => {
   );
 };
 
-export default React.memo(Header);
+export default React.memo(Index);

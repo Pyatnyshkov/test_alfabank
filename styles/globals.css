@@ -933,4 +933,14 @@ button {
   display: flex;
 }
 
+.error_container {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.loader {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
 

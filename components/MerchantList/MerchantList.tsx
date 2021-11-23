@@ -2,14 +2,17 @@ import React, { FC } from "react";
 import MerchantCard from "./MerchantCard";
 import { useAppSelector } from "../../helpers/redux-hooks";
 import { Merchant } from "../../models/merchant";
+import { merchantApi } from "../../services/MerchantService";
 
 const List: FC = () => {
-  const merchants = useAppSelector(state => state.app.merchants);
+  const {
+    data: merchants
+  } = merchantApi.useFetchMerchantsQuery(null);
   const selected = useAppSelector(state => state.app.merchant);
-  const merchantList = merchants.map((merchant: Merchant) => (
+  const merchantList = merchants?.map((merchant: Merchant, index: number) => (
     <MerchantCard
       merchant={merchant}
-      key={merchant.merchant_full_name}
+      key={index}
       selected={merchant.merchant_full_name === selected.merchant_full_name}
     />
   ));
