@@ -1,25 +1,30 @@
 import React from "react";
+import {useAppSelector} from "../../helpers/redux-hooks";
+
 
 const Settings = () => {
+
+  const merchant = useAppSelector(state => state.app.merchant)
+
   return (
     <div className="subtab__content">
       <table>
         <tbody>
           <tr className="content__table-colored">
             <td>Шаблон</td>
-            <td>template_merchant login</td>
+            <td>{merchant.template_merchant_login}</td>
           </tr>
           <tr className="content__table">
             <td>Логин</td>
-            <td>merchant_login</td>
+            <td>{merchant.merchant_login}</td>
           </tr>
           <tr className="content__table-colored">
             <td>Пользователи</td>
-            <td>custom_user_logins</td>
+            <td>{merchant.custom_user_logins}</td>
           </tr>
           <tr className="content__table">
             <td>Пароль</td>
-            <td>password (Необходимо сменить)</td>
+            <td>{merchant.password}</td>
           </tr>
         </tbody>
       </table>

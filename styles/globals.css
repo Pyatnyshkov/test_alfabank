@@ -725,6 +725,7 @@ h1, h2, h3, h4, p, figure {
   transform: rotate(-45deg);
 }
 
+
 /* Временные стили*/
 
 .container {
@@ -923,6 +924,7 @@ button {
   border-radius: 50%;
   background-color: transparent;
 }
+
 
 .content-tabs {
   display: flex;
