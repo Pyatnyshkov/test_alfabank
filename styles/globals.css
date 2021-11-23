@@ -670,8 +670,12 @@ h1, h2, h3, h4, p, figure {
   background-color: #F4F9FF;
 }
 
-.content__table-check {
+.content__table-span {
   display: block;
+  min-width: 100px;
+}
+
+.content__table-check {
   position: relative;
 }
 
@@ -702,7 +706,6 @@ h1, h2, h3, h4, p, figure {
 .content__table-uncheck {
   position: relative;
   width: 32px;
-  height: 32px;
   opacity: 1;
   top: -10px;
   left: -10px;

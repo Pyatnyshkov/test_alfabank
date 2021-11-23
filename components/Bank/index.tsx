@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import CustomTabs from "../UI/CustomTabs";
 import Settings from "./Settings";
-import Contacts from "./Contacts";
+import DS from "./3ds";
 import PaySystems from "./PaySystems";
 
 const Merchant = () => {
@@ -13,8 +13,8 @@ const Merchant = () => {
       value: "Settings"
     },
     {
-      name: "Контакты",
-      value: "Contacts"
+      name: "3DS",
+      value: "3DS"
     },
     {
       name: "Платежные системы",
@@ -25,8 +25,8 @@ const Merchant = () => {
     switch (tab) {
       case "Settings":
         return <Settings />;
-      case "Contacts":
-        return <Contacts />;
+      case "3DS":
+        return <DS />;
       case "PaySystems":
         return <PaySystems />;
     }

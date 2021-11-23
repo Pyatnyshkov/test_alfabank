@@ -1,13 +1,14 @@
 import React, { FC } from "react";
-import {useAppSelector} from "../../helpers/redux-hooks";
+import { useAppSelector } from "../../helpers/redux-hooks";
+import includeOption from '../../helpers/includeOption';
 
 interface IArrya {
 	locales: string[]
 }
 
 const PaymentPage: FC = () => {
-	const merchant:any = useAppSelector(state => state.app.merchant);
-	const language:IArrya = merchant.locales.map((language: string, key: number) => (
+	const merchant: any = useAppSelector(state => state.app.merchant);
+	const language: IArrya = merchant.locales.map((language: string, key: number) => (
 		<li key={key}>
 			{language}
 			{language.length === (key + 1) ? ' ' : `,`}
@@ -15,9 +16,6 @@ const PaymentPage: FC = () => {
 		</li>
 	));
 	const multi_language = merchant.use_multi_language_payment_page ? 'content__table-check' : 'content__table-uncheck';
-	const CAN_DISPLAY_IPS_RULES = merchant.options?.includes('CAN_DISPLAY_IPS_RULES') ? 'content__table-check' : 'content__table-uncheck';
-	const CUSTOM_PAYMENT_PAGE = merchant.options?.includes('CUSTOM_PAYMENT_PAGE') ? 'content__table-check' : 'content__table-uncheck';
-	const USE_COMPLETION_FINISH_3DS_PAGE = merchant.options?.includes('USE_COMPLETION_FINISH_3DS_PAGE') ? 'content__table-check' : 'content__table-uncheck';
 
 	return (
 		<table className="subtab__content">
@@ -65,7 +63,7 @@ const PaymentPage: FC = () => {
 						<span className="content__table-span">Отображение информации о правилах МПС</span>
 					</td>
 					<td>
-						<span className={`content__table-span ${CAN_DISPLAY_IPS_RULES}`}></span>
+						<span className={`content__table-span ${includeOption(merchant.options, 'CAN_DISPLAY_IPS_RULES')}`}></span>
 					</td>
 				</tr>
 				<tr className="content__table-colored">
@@ -73,7 +71,7 @@ const PaymentPage: FC = () => {
 						<span className="content__table-span">Перенаправлять на заданную платёжную страницу</span>
 					</td>
 					<td>
-						<span className={`content__table-span ${CUSTOM_PAYMENT_PAGE}`}></span>
+						<span className={`content__table-span ${includeOption(merchant.options, 'CUSTOM_PAYMENT_PAGE')}`}></span>
 					</td>
 				</tr>
 				<tr className="content__table">
@@ -81,7 +79,7 @@ const PaymentPage: FC = () => {
 						<span className="content__table-span">Использует страницу ожидания завершения 3DS</span>
 					</td>
 					<td>
-						<span className={`content__table-span ${USE_COMPLETION_FINISH_3DS_PAGE}`}></span>
+						<span className={`content__table-span ${includeOption(merchant.options, 'USE_COMPLETION_FINISH_3DS_PAGE')}`}></span>
 					</td>
 				</tr>
 			</tbody>

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import {useAppSelector} from "../../helpers/redux-hooks";
+import includeOption from '../../helpers/includeOption';
 
 const Settings: FC = () => {
-	const merchant = useAppSelector(state => state.app.merchant);
-	const REGISTER_BY_CLIENT = merchant.options?.includes('REGISTER_BY_CLIENT') ? 'content__table-check' : 'content__table-uncheck';
+	const merchant: any = useAppSelector(state => state.app.merchant);
 	
 	return (
 		<table className="subtab__content">
@@ -69,7 +69,7 @@ const Settings: FC = () => {
 						<span className="content__table-span">Разрешена регистрация заказа клиентом</span>
 					</td>
 					<td>
-						<span className={`content__table-span ${REGISTER_BY_CLIENT}`}></span>
+						<span className={`content__table-span ${includeOption(merchant.options, 'REGISTER_BY_CLIENT')}`}></span>
 					</td>
 				</tr>
 			</tbody>
