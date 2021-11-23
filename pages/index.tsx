@@ -5,43 +5,53 @@ import App from "../components/App";
 import { Merchant } from "../models/merchant";
 
 // @ts-ignore
-import riak from 'no-riak';
-import riak_config from '../config/riak.json';
+import riak from "no-riak";
+import riak_config from "../config/riak.json";
 // @ts-ignore
-import nodePickle from 'node-pickle';
+import nodePickle from "node-pickle";
 
-import testData from '../helpers/testData.json';
+// @ts-ignore
+import sha1 from "js-sha1";
+
+import testData from "../helpers/testData.json";
 
 function Home() {
   return <App />;
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  let merchants: Merchant[];
+  // let merchants: Merchant[];
   // try {
   //   const client = new riak.Client({connectionString: riak_config.connectionString});
   //   const keys = await client.listKeys({bucket: riak_config.bucket});
   //
   //   let getItemsList = function (keys: []):Promise<Merchant[]> {
   //     return new Promise(async function (resolve){
-  //       let items = [];
+  //       let merchants = [];
   //       for (let key of keys) {
-  //         let item = await client.get({
+  //         let merchants = await client.get({
   //           bucket: riak_config.bucket,
   //           key: key
   //         });
   //         const decodedItem = await nodePickle.loads(item.content[0].value);
   //         const parsedData = JSON.parse(decodedItem.data);
   //         parsedData.creation_time = decodedItem['_creation_time'];
-  //         items.push(parsedData);
+  //         merchants.push(parsedData);
   //       }
-  //       resolve(items);
+  //       resolve(merchants);
   //     });
   //   };
-  //   items = await getItemsList(keys);
+  //   merchants = await getItemsList(keys);
   // } catch (e) {
-  merchants = testData;
   // }
+  let merchants: Merchant[] = testData;
+  merchants.forEach((merchant: Merchant) => {
+    merchant.password = sha1(merchant.password);
+    merchant.users.forEach(
+      (user: { password: string }) =>
+        (user.password = sha1(user.password))
+    );
+  });
   return {
     props: { merchants }
   };
