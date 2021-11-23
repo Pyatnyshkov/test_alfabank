@@ -1,28 +1,11 @@
 import React, { FC } from "react";
 import { useAppSelector } from "../../helpers/redux-hooks";
 import includeOption from '../../helpers/includeOption';
-
-interface IArray {
-	currencies: string[]
-}
+import buildList from '../../helpers/buildList';
 
 const Settings: FC = () => {
 	const merchant: any = useAppSelector(state => state.app.merchant);
 	const merchantEnabled = merchant.enabled ? 'Активен' : 'Неактивен';
-	const currencies: IArray = merchant.currencies.map((currencie: string, key: number, currencies: []) => (
-		<li key={key}>
-			{currencie}
-			{currencies.length === (key + 1) ? ' ' : `,`}
-			&nbsp;
-		</li>
-	));
-	const languages: IArray = merchant.locales.map((language: string, key: number, languages: []) => (
-		<li key={key}>
-			{language}
-			{languages.length === (key + 1) ? ' ' : `,`}
-			&nbsp;
-		</li>
-	));
 
 	return (
 		<table className="subtab__content">
@@ -97,7 +80,7 @@ const Settings: FC = () => {
 					</td>
 					<td>
 						<ul className="table-list">
-							{currencies}
+							{ buildList(merchant.currencies) }
 						</ul>
 					</td>
 				</tr>

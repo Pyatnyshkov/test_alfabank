@@ -25,6 +25,7 @@
       "SEND_PAYMENT_FORM",
       "CUSTOM_PAYMENT_PAGE"
     ],
+    "operations_for_payer_notification": ["1", "2", "3"],
     "locales": ["EN", "RU"],
     "currencies": ["810", "810"],
     "default_currency": "810",

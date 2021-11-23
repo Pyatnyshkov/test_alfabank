@@ -1,20 +1,10 @@
 import React, { FC } from "react";
 import { useAppSelector } from "../../helpers/redux-hooks";
 import includeOption from '../../helpers/includeOption';
-
-interface IArray {
-	locales: [],
-}
+import buildList from '../../helpers/buildList';
 
 const PaymentPage: FC = () => {
 	const merchant: any = useAppSelector(state => state.app.merchant);
-	const languages: IArray = merchant.locales.map((language: string, key: number, languages: []) => (
-		<li key={key}>
-			{language}
-			{languages.length === (key + 1) ? ' ' : `,`}
-			&nbsp;
-		</li>
-	));
 	const multi_language = merchant.use_multi_language_payment_page ? 'content__table-check' : 'content__table-uncheck';
 
 	return (
@@ -32,7 +22,7 @@ const PaymentPage: FC = () => {
 					<td>Название языков</td>
 					<td>
 						<ul className="table-list">
-							{languages}
+							{ buildList(merchant.locales) }
 						</ul>
 					</td>
 				</tr>
