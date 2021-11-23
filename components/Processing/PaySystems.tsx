@@ -13,12 +13,12 @@ const PaySystems = () => {
   };
 
   const paymentSystems: paymentSystems = {
-    mir_3ds: merchant.mir_3ds_id,
-    mc_3ds: merchant.master_card_3ds_id,
-    visa_3ds: merchant.visa_3ds_id,
-    jcb_3ds: merchant.jcb_3ds_id,
-    cup_3ds: merchant.cup_3ds_id,
-    amex_3ds: merchant.amex_3ds_id
+    mir_3ds_id: merchant.mir_3ds_id,
+    master_card_3ds_id: merchant.master_card_3ds_id,
+    visa_3ds_id: merchant.visa_3ds_id,
+    jcb_3ds_id: merchant.jcb_3ds_id,
+    cup_3ds_id: merchant.cup_3ds_id,
+    amex_3ds_id: merchant.amex_3ds_id
   };
 
   const apply = Object.keys(paymentSystems).filter(
