@@ -4,7 +4,9 @@ import { useAppSelector } from "../../helpers/redux-hooks";
 const Contacts: FC = () => {
     const app = useAppSelector(state => state.app);
     const merchant = app.merchant;
-    return <table className="subtab__content">
+
+    return (
+        <table className="subtab__content">
             <tbody>
                 <tr className="content__table-colored">
                     <td>
@@ -64,6 +66,7 @@ const Contacts: FC = () => {
                 </tr>
             </tbody>
         </table>
+    )
 };
 
 export default Contacts;

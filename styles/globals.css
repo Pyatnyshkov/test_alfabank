@@ -670,6 +670,31 @@ h1, h2, h3, h4, p, figure {
   background-color: #F4F9FF;
 }
 
+.content__table-check {
+  display: block;
+  position: relative;
+}
+
+.content__table-check::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 9px;
+  background-color: #336699;
+  transform: translateX(10px) rotate(-45deg);
+}
+
+.content__table-check::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 19px;
+  background-color: #336699;  
+  transform: translateX(10px) rotate(-45deg);
+}
+
 /* Временные стили*/
 
 .container {
