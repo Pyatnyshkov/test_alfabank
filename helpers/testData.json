@@ -35,6 +35,7 @@
     "finish_page_login": "finish_page_login",
     "rules_page_merchant_name": "testOrderIPSwithoutSBP",
     "mcc": "mcc",
+    "merchant_additional_param": [{"name": "merCode", "value": "123", "payment_way": "UPOP"}, {"name": "merID", "value": "12345678901234", "payment_way": "CARD"}],
     "merchant_inn": "9999876543",
     "merchant_kpp": "99990001",
     "merchant_ogrn": "9999999999999",

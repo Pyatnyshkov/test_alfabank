@@ -9,7 +9,7 @@ const Fiscalization: FC = () => {
         <table className="subtab__content">
 			<tbody>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">ИНН</span>
 					</td>
 					<td>
@@ -17,7 +17,7 @@ const Fiscalization: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">КПП</span>
 					</td>
 					<td>
@@ -25,7 +25,7 @@ const Fiscalization: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">ОГРН</span>
 					</td>
 					<td>
@@ -33,7 +33,7 @@ const Fiscalization: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено формирование фискальных чеков</span>
 					</td>
 					<td>

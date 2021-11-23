@@ -11,15 +11,15 @@ const Settings: FC = () => {
 		<table className="subtab__content">
 			<tbody>
 				<tr className="content__table-colored">
-					<td>
-						<span className="content__table-span">Логин мерчанта </span>
+					<td className="table-key">
+						<span className="content__table-span">Логин мерчанта</span>
 					</td>
 					<td>
 						<span className="content__table-span">{merchant.merchant_login}</span>
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Предприятие</span>
 					</td>
 					<td>
@@ -27,7 +27,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Пароль</span>
 					</td>
 					<td>
@@ -35,7 +35,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Смена пароля</span>
 					</td>
 					<td>
@@ -43,7 +43,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Merchant ID (MID)</span>
 					</td>
 					<td>
@@ -51,7 +51,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Terminal ID (TID)</span>
 					</td>
 					<td>
@@ -59,7 +59,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена оплата через страницу на стороне продавца</span>
 					</td>
 					<td>
@@ -67,7 +67,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Активность продавца</span>
 					</td>
 					<td>
@@ -75,7 +75,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Валюта</span>
 					</td>
 					<td>
@@ -85,7 +85,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Код валюты</span>
 					</td>
 					<td>
@@ -93,7 +93,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Имя мерчанта на странице правил МПС</span>
 					</td>
 					<td>
@@ -101,7 +101,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Автозавершение включено</span>
 					</td>
 					<td>
@@ -109,7 +109,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено проведение автоплатежей</span>
 					</td>
 					<td>
@@ -117,7 +117,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена дополнительная информация по платежу (авиа)</span>
 					</td>
 					<td>
@@ -125,7 +125,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Сервис/система для проверки адреса клиента в случае выполнения оплаты по картам VISA и MasterCard / Amex</span>
 					</td>
 					<td>
@@ -133,7 +133,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Система генерирует clientId</span>
 					</td>
 					<td>
@@ -141,7 +141,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Конвертация валют, отличных от рублёвой</span>
 					</td>
 					<td>
@@ -149,7 +149,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Система генерирует номер заказа</span>
 					</td>
 					<td>
@@ -157,7 +157,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Обязательное указание описания заказа</span>
 					</td>
 					<td>
@@ -165,7 +165,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены частичные отмены</span>
 					</td>
 					<td>
@@ -173,7 +173,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Оплата картами запрещена</span>
 					</td>
 					<td>
@@ -181,7 +181,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Оплата картой, когда уже известна сумма оплаты</span>
 					</td>
 					<td>
@@ -189,7 +189,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Отсылать сообщение клиенту после каждого возврата средств</span>
 					</td>
 					<td>
@@ -197,7 +197,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Отсылать сообщение-заявку в банк вместо отмены завершения</span>
 					</td>
 					<td>
@@ -205,7 +205,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена отправка описания заказа в процессинг</span>
 					</td>
 					<td>
@@ -213,7 +213,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена отправка номера заказа в процессинг</span>
 					</td>
 					<td>
@@ -221,7 +221,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена отправка платёжной формы</span>
 					</td>
 					<td>
@@ -229,7 +229,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена оплата связкой через СМС</span>
 					</td>
 					<td>
@@ -237,7 +237,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL</span>
 					</td>
 					<td>
@@ -245,7 +245,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL для AMEX</span>
 					</td>
 					<td>
@@ -253,7 +253,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL для CUP</span>
 					</td>
 					<td>
@@ -261,7 +261,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL для JCB</span>
 					</td>
 					<td>
@@ -269,7 +269,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL для Mastercard</span>
 					</td>
 					<td>
@@ -277,7 +277,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL для MIR</span>
 					</td>
 					<td>
@@ -285,7 +285,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Оплата через SSL, если есть 3DS связка</span>
 					</td>
 					<td>
@@ -293,7 +293,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через SSL для VISA</span>
 					</td>
 					<td>
@@ -301,7 +301,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена отправка платёжной формы</span>
 					</td>
 					<td>
@@ -309,7 +309,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено проверять платежи</span>
 					</td>
 					<td>
@@ -317,7 +317,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Поддержка белого списка для кредитовых операций</span>
 					</td>
 					<td>
@@ -325,7 +325,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Поддержка белого списка для дебетовых операций</span>
 					</td>
 					<td>

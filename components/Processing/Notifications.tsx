@@ -5,12 +5,46 @@ import buildList from '../../helpers/buildList';
 
 const Notifications: FC = () => {
     const merchant: any = useAppSelector(state => state.app.merchant);
+    console.log(merchant.merchant_additional_param);
+
+    const MERCHANT_ADDITIONAL_PARAM = merchant.merchant_additional_param?.map((merchant: any, key: number) => (
+        <li key={key}>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span className="content__table-span">Название</span>
+                        </td>
+                        <td>
+                            <span className="content__table-span">{merchant.name}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span className="content__table-span">Способ оплаты</span>
+                        </td>
+                        <td>
+                            <span className="content__table-span">{merchant.payment_way}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span className="content__table-span">Значение</span>
+                        </td>
+                        <td>
+                            <span className="content__table-span">{merchant.value}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+    ))
 
     return (
         <table className="subtab__content">
             <tbody>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Отсылать уведомление по телефону</span>
                     </td>
                     <td>
@@ -18,7 +52,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Токен мерчанта для подписи в callback</span>
                     </td>
                     <td>
@@ -26,7 +60,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Симметричный ключ для подписи callback-уведомления</span>
                     </td>
                     <td>
@@ -34,7 +68,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Тип подписи callback-уведомления</span>
                     </td>
                     <td>
@@ -42,7 +76,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Тип коллбека</span>
                     </td>
                     <td>
@@ -50,7 +84,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Адреса для коллбеков</span>
                     </td>
                     <td>
@@ -58,7 +92,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Список callback-операций</span>
                     </td>
                     <td>
@@ -66,7 +100,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Отправлять уведомления клиенту</span>
                     </td>
                     <td>
@@ -74,7 +108,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Отправлять уведомления продавцу</span>
                     </td>
                     <td>
@@ -82,7 +116,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">HTTP заголовки для коллбеков</span>
                     </td>
                     <td>
@@ -92,7 +126,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Дополнительные параметры для коллбеков</span>
                     </td>
                     <td>
@@ -100,7 +134,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Идентификатор родителя</span>
                     </td>
                     <td>
@@ -108,7 +142,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Список операцией для оповещений покупателя</span>
                     </td>
                     <td>
@@ -118,7 +152,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Список операцией для оповещений продавца</span>
                     </td>
                     <td>
@@ -128,7 +162,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Открытый токен</span>
                     </td>
                     <td>
@@ -136,15 +170,17 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Дополнительные параметры продавца</span>
                     </td>
                     <td>
-                        <span className="content__table-span">??</span>
+                        <ul className="table-list-column">
+                            {MERCHANT_ADDITIONAL_PARAM}
+                        </ul>
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Разрешено выполнять callback-операции</span>
                     </td>
                     <td>
@@ -152,7 +188,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Уведомлять о создании связки</span>
                     </td>
                     <td>
@@ -160,7 +196,7 @@ const Notifications: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Отправлять уведомления об оформлении заказа</span>
                     </td>
                     <td>

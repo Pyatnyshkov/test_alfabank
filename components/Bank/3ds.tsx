@@ -9,7 +9,7 @@ const Contacts: FC = () => {
         <table className="subtab__content">
             <tbody>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование Mastercard SecureCode</span>
 					</td>
 					<td>
@@ -17,7 +17,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование Verified by Visa</span>
 					</td>
 					<td>
@@ -25,7 +25,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование JSecure 3DS 2.0</span>
 					</td>
 					<td>
@@ -33,7 +33,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование MirAccept 3DS 2.0</span>
 					</td>
 					<td>
@@ -41,7 +41,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">3D Secure-платежи проходят только со статусом Y</span>
 					</td>
 					<td>
@@ -49,7 +49,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Включить режим iReq-SSL для ошибок iReq</span>
 					</td>
 					<td>
@@ -57,7 +57,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование JSecure</span>
 					</td>
 					<td>
@@ -65,7 +65,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено участие в программе рассрочки Mastercard</span>
 					</td>
 					<td>
@@ -73,7 +73,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена оплата по токенизированным связкам в MDES</span>
 					</td>
 					<td>
@@ -81,7 +81,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена оплата через страницу на стороне продавца</span>
 					</td>
 					<td>
@@ -89,7 +89,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование MirAccept</span>
 					</td>
 					<td>
@@ -97,7 +97,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Получать 3DS реквизиты операции</span>
 					</td>
 					<td>
@@ -105,7 +105,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование AMEX SafeKye 3DS 2.0</span>
 					</td>
 					<td>
@@ -113,7 +113,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование Mastercard SecureCode 3DS 2.0</span>
 					</td>
 					<td>
@@ -121,7 +121,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешены платежи через 3DS ver.2</span>
 					</td>
 					<td>
@@ -129,7 +129,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование UnionPay 3-D Secure</span>
 					</td>
 					<td>
@@ -137,7 +137,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использование Verified by Visa 3DS 2.0</span>
 					</td>
 					<td>
@@ -145,7 +145,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено использовать сервис вовлечённости в 3DS</span>
 					</td>
 					<td>
@@ -153,7 +153,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешено участие в программе рассрочки Visa</span>
 					</td>
 					<td>
@@ -161,7 +161,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена токенизация связок в VTS</span>
 					</td>
 					<td>
@@ -169,7 +169,7 @@ const Contacts: FC = () => {
 					</td>
 				</tr>
                 <tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена работа со связками DMR (Деньги Мейл.Ру)</span>
 					</td>
 					<td>

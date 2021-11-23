@@ -9,7 +9,7 @@ const Settings: FC = () => {
 		<table className="subtab__content">
 			<tbody>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Логин мерчанта</span>
 					</td>
 					<td>
@@ -17,7 +17,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Пароль</span>
 					</td>
 					<td>
@@ -25,7 +25,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Предприятие</span>
 					</td>
 					<td>
@@ -33,7 +33,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Merchant ID (MID)</span>
 					</td>
 					<td>
@@ -41,7 +41,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Terminal ID (TID)</span>
 					</td>
 					<td>
@@ -49,7 +49,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Код категории продавца</span>
 					</td>
 					<td>
@@ -57,7 +57,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Логин страницы правил</span>
 					</td>
 					<td>
@@ -65,7 +65,7 @@ const Settings: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Разрешена регистрация заказа клиентом</span>
 					</td>
 					<td>

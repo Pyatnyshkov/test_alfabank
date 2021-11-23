@@ -666,6 +666,11 @@ h1, h2, h3, h4, p, figure {
 .content__table {
   padding: 10px 0;
 }
+
+.table-key {
+  max-width: 400px;
+}
+
 .content__table-colored {
   background-color: #F4F9FF;
 }
@@ -859,6 +864,11 @@ button {
 .table-list {
   display: flex;
   align-items: center;
+}
+
+.table-list-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .table-list__item {

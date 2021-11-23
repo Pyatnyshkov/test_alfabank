@@ -11,7 +11,7 @@ const PaymentPage: FC = () => {
 		<table className="subtab__content">
 			<tbody>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Язык платежной страницы</span>
 					</td>
 					<td>
@@ -19,7 +19,7 @@ const PaymentPage: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>Название языков</td>
+					<td className="table-key">Название языков</td>
 					<td>
 						<ul className="table-list">
 							{ buildList(merchant.locales) }
@@ -27,13 +27,13 @@ const PaymentPage: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>Логин платежной страницы</td>
+					<td className="table-key">Логин платежной страницы</td>
 					<td>
 						<span className="content__table-span">{merchant.payment_page_login}</span>
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Логин финальной страницы</span>
 					</td>
 					<td>
@@ -41,7 +41,7 @@ const PaymentPage: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Мультиязычность</span>
 					</td>
 					<td>
@@ -49,7 +49,7 @@ const PaymentPage: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Отображение информации о правилах МПС</span>
 					</td>
 					<td>
@@ -57,7 +57,7 @@ const PaymentPage: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table-colored">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Перенаправлять на заданную платёжную страницу</span>
 					</td>
 					<td>
@@ -65,7 +65,7 @@ const PaymentPage: FC = () => {
 					</td>
 				</tr>
 				<tr className="content__table">
-					<td>
+					<td className="table-key">
 						<span className="content__table-span">Использует страницу ожидания завершения 3DS</span>
 					</td>
 					<td>

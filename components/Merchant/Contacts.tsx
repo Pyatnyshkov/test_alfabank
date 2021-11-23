@@ -9,7 +9,7 @@ const Contacts: FC = () => {
         <table className="subtab__content">
             <tbody>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Адрес сайта (URL)</span>
                     </td>
                     <td>
@@ -17,7 +17,7 @@ const Contacts: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Адрес оферты</span>
                     </td>
                     <td>
@@ -25,7 +25,7 @@ const Contacts: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Адреса почты</span>
                     </td>
                     <td>
@@ -33,7 +33,7 @@ const Contacts: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Фактический адрес мерчанта</span>
                     </td>
                     <td>
@@ -41,7 +41,7 @@ const Contacts: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Номер телефона мерчанта</span>
                     </td>
                     <td>
@@ -49,7 +49,7 @@ const Contacts: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Адрес для обратной связи</span>
                     </td>
                     <td>
@@ -57,7 +57,7 @@ const Contacts: FC = () => {
                     </td>
                 </tr>
                 <tr className="content__table-colored">
-                    <td>
+                    <td className="table-key">
                         <span className="content__table-span">Описание мерчанта</span>
                     </td>
                     <td>
