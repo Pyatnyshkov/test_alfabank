@@ -1,8 +1,7 @@
 import React from "react";
-import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import { GetServerSideProps } from "next";
 
-import Index from "../components/Index";
-
+import App from "../components/App";
 import { Merchant } from "../models/merchant";
 
 // @ts-ignore
@@ -13,12 +12,12 @@ import nodePickle from 'node-pickle';
 
 import testData from '../helpers/testData.json';
 
-function Home({ items }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  return <Index items={items} />;
+function Home() {
+  return <App />;
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  let items: Merchant[] = [];
+  let merchants: Merchant[];
   // try {
   //   const client = new riak.Client({connectionString: riak_config.connectionString});
   //   const keys = await client.listKeys({bucket: riak_config.bucket});
@@ -41,10 +40,10 @@ export const getServerSideProps: GetServerSideProps = async () => {
   //   };
   //   items = await getItemsList(keys);
   // } catch (e) {
-    items = testData;
+  merchants = testData;
   // }
   return {
-    props: { items }
+    props: { merchants }
   };
 };
 

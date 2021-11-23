@@ -1,7 +1,7 @@
 import React from "react";
 import { useAppDispatch } from "../../helpers/redux-hooks";
 
-import { setMerchant } from "../../store/reducers/app";
+import { setMerchant } from "../../store/appReducer";
 import { Merchant } from "../../models/merchant";
 
 interface IList {

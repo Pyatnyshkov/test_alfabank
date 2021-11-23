@@ -1,10 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Merchant } from "../../models/merchant";
+import { Merchant } from "../models/merchant";
+import { AppState } from "../models/app";
 
-interface AppState {
-  merchants: Merchant[];
-  merchant: Merchant;
-}
 const initialState: AppState = {
   merchants: [],
   merchant: {
@@ -22,14 +19,11 @@ const appSlice = createSlice({
   name: "app",
   initialState,
   reducers: {
-    setMerchants(state, action: PayloadAction<Merchant[]>) {
-      state.merchants = action.payload;
-    },
     setMerchant(state, action: PayloadAction<Merchant>) {
       state.merchant = action.payload;
     }
   }
 });
 
-export const { setMerchants, setMerchant } = appSlice.actions;
+export const { setMerchant } = appSlice.actions;
 export default appSlice.reducer;
