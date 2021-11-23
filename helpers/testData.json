@@ -25,11 +25,15 @@
       "SEND_PAYMENT_FORM",
       "CUSTOM_PAYMENT_PAGE"
     ],
+    "locales": ["EN", "RU"],
     "currencies": ["810", "810"],
     "default_currency": "810",
+    "default_language": "RU",
     "back_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
     "fail_url": "https://web.rbsuat.com/ab/merchants/typical/finish_lt.html",
+    "finish_page_login": "finish_page_login",
     "rules_page_merchant_name": "testOrderIPSwithoutSBP",
+    "mcc": "mcc",
     "merchant_inn": "9999876543",
     "merchant_kpp": "99990001",
     "merchant_ogrn": "9999999999999",
@@ -47,7 +51,8 @@
         "password": "D2FxJRO79qJdwpouXp87iYiku6k="
       }
     ],
-    "creation_time": 1635420781.1413949
+    "creation_time": 1635420781.1413949,
+    "use_multi_language_payment_page": false
   },
   {
     "template_merchant_login": "template_ecom",

@@ -2,10 +2,8 @@ import React, { FC } from "react";
 import {useAppSelector} from "../../helpers/redux-hooks";
 
 const Settings: FC = () => {
-	const app = useAppSelector(state => state.app)
-	const merchant = app.merchant;
-
-	const REGISTER_BY_CLIENT = merchant.options?.includes('REGISTER_BY_CLIENT') ? 'content__table-check' : '';
+	const merchant = useAppSelector(state => state.app.merchant);
+	const REGISTER_BY_CLIENT = merchant.options?.includes('REGISTER_BY_CLIENT') ? 'content__table-check' : 'content__table-uncheck';
 	
 	return (
 		<table className="subtab__content">
