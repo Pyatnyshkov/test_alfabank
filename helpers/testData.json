@@ -43,6 +43,7 @@
     "merchant_phone": "+79876543210",
     "merchant_feedback_email": "gsdfgdfsgfds@test.ru",
     "rules_page_login": "full",
+    "rulesInfo": ["1"],
     "users": [
       {
         "username": "mgremgkmergmkreerqqqwwww-api",

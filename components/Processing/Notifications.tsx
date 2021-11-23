@@ -5,7 +5,8 @@ import buildList from '../../helpers/buildList';
 
 const Notifications: FC = () => {
     const merchant: any = useAppSelector(state => state.app.merchant);
-    console.log(merchant.merchant_additional_param);
+    const SEND_CLIENT_EMAIL = merchant.send_client_email ? 'content__table-check' : 'content__table-uncheck';
+    const SEND_MERCHANT_EMAIL = merchant.send_merchant_email ? 'content__table-check' : 'content__table-uncheck';
 
     const MERCHANT_ADDITIONAL_PARAM = merchant.merchant_additional_param?.map((merchant: any, key: number) => (
         <li key={key}>
@@ -104,7 +105,7 @@ const Notifications: FC = () => {
                         <span className="content__table-span">Отправлять уведомления клиенту</span>
                     </td>
                     <td>
-                        <span className="content__table-span">{merchant.send_client_email}</span>
+                        <span className={`content__table-span ${SEND_CLIENT_EMAIL}`}></span>
                     </td>
                 </tr>
                 <tr className="content__table-colored">
@@ -112,7 +113,7 @@ const Notifications: FC = () => {
                         <span className="content__table-span">Отправлять уведомления продавцу</span>
                     </td>
                     <td>
-                        <span className="content__table-span">{merchant.send_merchant_email}</span>
+                        <span className={`content__table-span ${SEND_MERCHANT_EMAIL}`}></span>
                     </td>
                 </tr>
                 <tr className="content__table">

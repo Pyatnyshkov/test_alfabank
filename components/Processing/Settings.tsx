@@ -6,6 +6,7 @@ import buildList from '../../helpers/buildList';
 const Settings: FC = () => {
 	const merchant: any = useAppSelector(state => state.app.merchant);
 	const merchantEnabled = merchant.enabled ? 'Активен' : 'Неактивен';
+	const MUST_CHANGE_PWD = merchant.must_change_pwd ? 'content__table-check' : 'content__table-uncheck';
 
 	return (
 		<table className="subtab__content">
@@ -39,7 +40,7 @@ const Settings: FC = () => {
 						<span className="content__table-span">Смена пароля</span>
 					</td>
 					<td>
-						<span className="content__table-span">{merchant.must_change_pwd}</span>
+						<span className={`content__table-span ${MUST_CHANGE_PWD}`}></span>
 					</td>
 				</tr>
 				<tr className="content__table-colored">

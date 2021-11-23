@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import {useAppSelector} from "../../helpers/redux-hooks";
+import includeOption from '../../helpers/includeOption';
 
 const Fiscalization: FC = () => {
-    const merchant:any = useAppSelector(state => state.app.merchant);
-    const CAN_CREATE_OFD_RECEIPTS_MANUALLY = merchant.options?.includes('CAN_CREATE_OFD_RECEIPTS_MANUALLY') ? 'content__table-check' : 'content__table-uncheck';
+    const merchant: any = useAppSelector(state => state.app.merchant);
 
     return <section className="subtab__content">
         <table className="subtab__content">
@@ -37,7 +37,7 @@ const Fiscalization: FC = () => {
 						<span className="content__table-span">Разрешено формирование фискальных чеков</span>
 					</td>
 					<td>
-						<span className={`content__table-span ${CAN_CREATE_OFD_RECEIPTS_MANUALLY}`}></span>
+						<span className={`content__table-span ${includeOption(merchant.options, 'CAN_CREATE_OFD_RECEIPTS_MANUALLY')}`}></span>
 					</td>
 				</tr>
             </tbody>

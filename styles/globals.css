@@ -667,8 +667,10 @@ h1, h2, h3, h4, p, figure {
   padding: 10px 0;
 }
 
-.table-key {
+.table-key,
+.table-key > .content__table-span {
   max-width: 400px;
+  min-width: 400px;
 }
 
 .content__table-colored {
@@ -678,6 +680,13 @@ h1, h2, h3, h4, p, figure {
 .content__table-span {
   display: block;
   min-width: 100px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.content__table-parag {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .content__table-check {
@@ -689,7 +698,7 @@ h1, h2, h3, h4, p, figure {
   display: block;
   position: absolute;
   top: 0;
-  left: -8px;
+  left: -5px;
   width: 3px;
   height: 8px;
   background-color: #336699;
@@ -701,7 +710,7 @@ h1, h2, h3, h4, p, figure {
   display: block;
   position: absolute;
   top: 0;
-  left: -8px;
+  left: -5px;
   height: 3px;
   width: 15px;
   background-color: #336699;
@@ -718,7 +727,7 @@ h1, h2, h3, h4, p, figure {
 
 .content__table-uncheck:before, .content__table-uncheck:after {
   position: absolute;
-  left: 15px;
+  left: 18px;
   content: ' ';
   height: 20px;
   width: 2px;
@@ -864,6 +873,7 @@ button {
 .table-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .table-list-column {
