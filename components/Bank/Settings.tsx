@@ -11,7 +11,7 @@ const Settings: FC = () => {
   const OVERRIDED_FRAUD_CONTROL_LOGIN_ENABLED = merchant.overrided_fraud_control_login_enabled
     ? "content__table-check"
     : "content__table-uncheck";
-  const RULES_INFO = !!merchant.rulesInfo.length;
+  const RULES_INFO = !!merchant?.rulesInfo.length;
   const RULES_INFO_LIST = merchant.rulesInfo?.map((item: any, key: number) => (
     <li key={key}>
       <table>

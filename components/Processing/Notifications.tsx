@@ -12,7 +12,7 @@ const Notifications: FC = () => {
     ? "content__table-check"
     : "content__table-uncheck";
 
-  const MERCHANT_ADDITIONAL_PARAM = merchant.merchant_additional_param.map(
+  const MERCHANT_ADDITIONAL_PARAM = merchant.merchant_additional_param?.map(
     (merchant: any, key: number) => (
       <li key={key}>
         <table>

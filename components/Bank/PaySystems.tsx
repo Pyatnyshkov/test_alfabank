@@ -8,7 +8,7 @@ interface paymentSystems {
 
 const PaySystems: FC = () => {
     const [paySystem, setPaySystem] = useState("");
-    const merchant = useAppSelector(state => state.app.merchant);
+    const merchant: any = useAppSelector(state => state.app.merchant);
     const toggleTab = (paySystem: string) => {
         setPaySystem(paySystem);
     };
@@ -23,8 +23,6 @@ const PaySystems: FC = () => {
     const apply = Object.keys(paymentSystems).filter(
         (paymentSystem: string) => paymentSystems[paymentSystem]
     );
-
-    console.log(paySystem);
 
     return (
         <div>
