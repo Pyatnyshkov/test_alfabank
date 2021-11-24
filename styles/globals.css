@@ -350,7 +350,7 @@ table {
 
 td {
   padding: 10px 0 10px 5px;
-  width: 40%;
+  /* width: 40%; */
 }
 /**
  * Add the correct display in IE 10.
@@ -359,7 +359,6 @@ td {
 [hidden] {
   display: none;
 }
-
 
 /* !начало main_styles */
 html {
@@ -663,6 +662,12 @@ h1, h2, h3, h4, p, figure {
   margin-top: 30px;
 }
 
+table.subtab__content {
+  display: table;
+  height: auto;
+  margin-bottom: 40px;
+}
+
 .subtab__content {
   overflow-y: scroll;
   height: calc(100vh - 340px);
@@ -785,7 +790,8 @@ h1, h2, h3, h4, p, figure {
   margin-right: 20px;
 }
 
-.subtabs:nth-child(1) {
+.subtabs:nth-child(1),
+.subtab__content.mir_3ds_id {
   background: url("img/mir.png") no-repeat center / 70%;
 }
 
@@ -793,19 +799,27 @@ h1, h2, h3, h4, p, figure {
   background: url("img/maestro.png") no-repeat center / 100%;
 }
 
-.subtabs:nth-child(3) {
+.subtabs.master_card_3ds_id {
+  background: url("img/mastercard.png") no-repeat center / 100%;
+}
+
+.subtabs:nth-child(3),
+.subtabs.visa_3ds_id {
   background: url("img/visa.png") no-repeat center / 70%;
 }
 
-.subtabs:nth-child(4) {
+.subtabs:nth-child(4),
+.subtabs.jcb_3ds_id {
   background: url("img/jcb.png") no-repeat center / 80%;
 }
 
-.subtabs:nth-child(5) {
+.subtabs:nth-child(5),
+.subtabs.cup_3ds_id {
   background: url("img/up.png") no-repeat center / 50%;
 }
 
-.subtabs:nth-child(6) {
+.subtabs:nth-child(6),
+.subtabs.amex_3ds_id {
   background: url("img/amex.svg") no-repeat center / 100%;
 }
 
