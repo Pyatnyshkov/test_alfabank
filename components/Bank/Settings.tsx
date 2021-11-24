@@ -11,6 +11,85 @@ const Settings: FC = () => {
   const OVERRIDED_FRAUD_CONTROL_LOGIN_ENABLED = merchant.overrided_fraud_control_login_enabled
     ? "content__table-check"
     : "content__table-uncheck";
+  const RULES_INFO = !!merchant.rulesInfo.length;
+  const RULES_INFO_LIST = merchant.rulesInfo?.map((item: any, key: number) => (
+    <li key={key}>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <span className="content__table-span">Признак активного правила</span>
+            </td>
+            <td>
+              <span 
+                className={`content__table-span 
+                  ${item.boolean ? "content__table-check" : "content__table-uncheck"}`}>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span">Перечень продавцов в правиле</span>
+            </td>
+            <td>
+              <span className="content__table-span">{buildList(item.merchants)}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span">Тип правила ruleType</span>
+            </td>
+            <td>
+              <span className="content__table-span">{item.ruleType}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span">Описание правила</span>
+            </td>
+            <td>
+              <span className="content__table-span">{item.description}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span">Признак правила по умолчанию</span>
+            </td>
+            <td>
+              <span 
+                className={`content__table-span 
+                ${item.byDefault ? "content__table-check" : "content__table-uncheck"}`}>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span">Скрипт правила</span>
+            </td>
+            <td>
+              <span className="content__table-span">{item.script}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span">Id правила</span>
+            </td>
+            <td>
+              <span className="content__table-span">{item.ruleId}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="content__table-span"></span>
+            </td>
+            <td>
+              <span className="content__table-span"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  ))
 
   return (
     <table className="subtab__content">
@@ -310,6 +389,18 @@ const Settings: FC = () => {
             />
           </td>
         </tr>
+        {
+          RULES_INFO ? (
+              <tr className="content__table">
+                <td className="table-key">
+                  <span className="content__table-span">Правила для Мерчанта</span>
+                </td>
+                <td>
+                  <ul className="table-list-column">{RULES_INFO_LIST}</ul>
+                </td>
+              </tr>
+          ) : ''
+        }
       </tbody>
     </table>
   );

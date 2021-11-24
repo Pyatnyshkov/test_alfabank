@@ -43,6 +43,14 @@ const Notifications: FC = () => {
                 <span className="content__table-span">{merchant.value}</span>
               </td>
             </tr>
+            <tr>
+              <td>
+                <span className="content__table-span"></span>
+              </td>
+              <td>
+                <span className="content__table-span"></span>
+              </td>
+            </tr>
           </tbody>
         </table>
       </li>
