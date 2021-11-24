@@ -30,7 +30,7 @@ export interface Merchant extends IObjectKeys {
   merchant_phone?: string;
   merchant_feedback_email?: string;
   rules_page_login?: string;
-  rulesInfo?: object[];
+  rulesInfo?: string[];
   custom_user_logins?: string[];
   external_fraud_control_enabled?: boolean;
   overrided_fraud_control_login?: string;

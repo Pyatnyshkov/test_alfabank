@@ -38,10 +38,12 @@ const PaySystems = () => {
           />
         ))}
       </div>
-      <div className="content-tabs">
-        <strong>ID: </strong>
-        <div className="content">{merchant[paySystem]}</div>
-      </div>
+      {paySystem && (
+        <div className="content-tabs">
+          <strong>ID: </strong>
+          <div className="content">{merchant[paySystem]}</div>
+        </div>
+      )}
     </div>
   );
 };
