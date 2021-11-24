@@ -1,9 +1,15 @@
 import React, {useState} from "react";
+import {useAppSelector} from "../../helpers/redux-hooks";
 
 const PayTypes = () => {
 
     const [toggleState, setToggleState] = useState(1);
 
+    const merchant = useAppSelector(state => state.app.merchant)
+
+    const paymentTypes = {
+        sbp_terminal_id: merchant.sbp_terminal_id,
+    }
     const getContent = () => {
         switch (toggleState) {
             case 1:
